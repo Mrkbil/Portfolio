@@ -462,6 +462,72 @@
 			}
 		}
 	</style>
+	<script>
+	function downloadResume() {
+    const fileUrl = 'Rakibul_Islam.pdf';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = 'resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+function playVideo() {
+    // Create a popup container
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '0';
+    popup.style.left = '0';
+    popup.style.width = '100%';
+    popup.style.height = '100%';
+    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    popup.style.display = 'flex';
+    popup.style.justifyContent = 'center';
+    popup.style.alignItems = 'center';
+    popup.style.zIndex = '1000';
+
+    // Create iframe for YouTube video
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/wnsbEJNk7IE?autoplay=1';
+    iframe.width = '80%';
+    iframe.height = '80%';
+    iframe.style.maxWidth = '800px';
+    iframe.style.maxHeight = '450px';
+    iframe.frameBorder = '0';
+    iframe.allow = 'autoplay; encrypted-media';
+    iframe.allowFullscreen = true;
+
+    // Create close button
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '&times;';
+    closeBtn.style.position = 'absolute';
+    closeBtn.style.top = '10px';
+    closeBtn.style.right = '10px';
+    closeBtn.style.fontSize = '30px';
+    closeBtn.style.background = 'none';
+    closeBtn.style.border = 'none';
+    closeBtn.style.color = 'white';
+    closeBtn.style.cursor = 'pointer';
+
+    // Add click event to close the popup
+    closeBtn.onclick = () => {
+        document.body.removeChild(popup);
+    };
+
+    // Append elements
+    popup.appendChild(iframe);
+    popup.appendChild(closeBtn);
+    document.body.appendChild(popup);
+
+    // Optional: Close popup when clicking outside the video
+    popup.onclick = (e) => {
+        if (e.target === popup) {
+            document.body.removeChild(popup);
+        }
+    };
+}
+	</script>
 	<!-- Hero Section -->
 	<section class="hero-section">
 		<div class="cyber-container">
