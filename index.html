@@ -36,7 +36,8 @@
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Specialization</span></a>
+					</li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -463,70 +464,70 @@
 		}
 	</style>
 	<script>
-	function downloadResume() {
-    const fileUrl = 'Rakibul_Islam.pdf';
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = 'resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+		function downloadResume() {
+			const fileUrl = 'Rakibul_Islam.pdf';
+			const link = document.createElement('a');
+			link.href = fileUrl;
+			link.download = 'resume.pdf';
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+		}
 
-function playVideo() {
-    // Create a popup container
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = '0';
-    popup.style.left = '0';
-    popup.style.width = '100%';
-    popup.style.height = '100%';
-    popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-    popup.style.display = 'flex';
-    popup.style.justifyContent = 'center';
-    popup.style.alignItems = 'center';
-    popup.style.zIndex = '1000';
+		function playVideo() {
+			// Create a popup container
+			const popup = document.createElement('div');
+			popup.style.position = 'fixed';
+			popup.style.top = '0';
+			popup.style.left = '0';
+			popup.style.width = '100%';
+			popup.style.height = '100%';
+			popup.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+			popup.style.display = 'flex';
+			popup.style.justifyContent = 'center';
+			popup.style.alignItems = 'center';
+			popup.style.zIndex = '1000';
 
-    // Create iframe for YouTube video
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/wnsbEJNk7IE?autoplay=1';
-    iframe.width = '80%';
-    iframe.height = '80%';
-    iframe.style.maxWidth = '800px';
-    iframe.style.maxHeight = '450px';
-    iframe.frameBorder = '0';
-    iframe.allow = 'autoplay; encrypted-media';
-    iframe.allowFullscreen = true;
+			// Create iframe for YouTube video
+			const iframe = document.createElement('iframe');
+			iframe.src = 'https://www.youtube.com/embed/wnsbEJNk7IE?autoplay=1';
+			iframe.width = '80%';
+			iframe.height = '80%';
+			iframe.style.maxWidth = '800px';
+			iframe.style.maxHeight = '450px';
+			iframe.frameBorder = '0';
+			iframe.allow = 'autoplay; encrypted-media';
+			iframe.allowFullscreen = true;
 
-    // Create close button
-    const closeBtn = document.createElement('button');
-    closeBtn.innerHTML = '&times;';
-    closeBtn.style.position = 'absolute';
-    closeBtn.style.top = '10px';
-    closeBtn.style.right = '10px';
-    closeBtn.style.fontSize = '30px';
-    closeBtn.style.background = 'none';
-    closeBtn.style.border = 'none';
-    closeBtn.style.color = 'white';
-    closeBtn.style.cursor = 'pointer';
+			// Create close button
+			const closeBtn = document.createElement('button');
+			closeBtn.innerHTML = '&times;';
+			closeBtn.style.position = 'absolute';
+			closeBtn.style.top = '10px';
+			closeBtn.style.right = '10px';
+			closeBtn.style.fontSize = '30px';
+			closeBtn.style.background = 'none';
+			closeBtn.style.border = 'none';
+			closeBtn.style.color = 'white';
+			closeBtn.style.cursor = 'pointer';
 
-    // Add click event to close the popup
-    closeBtn.onclick = () => {
-        document.body.removeChild(popup);
-    };
+			// Add click event to close the popup
+			closeBtn.onclick = () => {
+				document.body.removeChild(popup);
+			};
 
-    // Append elements
-    popup.appendChild(iframe);
-    popup.appendChild(closeBtn);
-    document.body.appendChild(popup);
+			// Append elements
+			popup.appendChild(iframe);
+			popup.appendChild(closeBtn);
+			document.body.appendChild(popup);
 
-    // Optional: Close popup when clicking outside the video
-    popup.onclick = (e) => {
-        if (e.target === popup) {
-            document.body.removeChild(popup);
-        }
-    };
-}
+			// Optional: Close popup when clicking outside the video
+			popup.onclick = (e) => {
+				if (e.target === popup) {
+					document.body.removeChild(popup);
+				}
+			};
+		}
 	</script>
 	<!-- Hero Section -->
 	<section class="hero-section">
@@ -556,9 +557,10 @@ function playVideo() {
 						class="fab fa-linkedin"></i></a>
 				<a href="https://www.facebook.com/mrkbil" target="_blank" class="social-icon"><i
 						class="fab fa-facebook"></i></a>
-				<a href="https://github.com/mrkbil" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-				<a href="https://scholar.google.com/citations?user=xjz-G4EAAAAJ&hl=en" target="_blank" class="social-icon"><i
-						class="fa-brands fa-google-scholar"></i></a>
+				<a href="https://github.com/mrkbil" target="_blank" class="social-icon"><i
+						class="fab fa-github"></i></a>
+				<a href="https://scholar.google.com/citations?user=xjz-G4EAAAAJ&hl=en" target="_blank"
+					class="social-icon"><i class="fa-brands fa-google-scholar"></i></a>
 
 			</div>
 		</div>
@@ -1026,13 +1028,15 @@ function playVideo() {
 		</div>
 	</section>
 
-	<!-- <section class="ftco-section" id="services-section">
+	<section class="ftco-section" id="services-section">
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-center py-5 mt-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<h1 class="big big-2">Specialization</h1>
+					<h2 class="mb-4">Specialization</h2>
+					<p>Specialized in .NET, Python, AI/ML, and Intelligent Automation with a strong focus on developing
+						scalable, data-driven solutions using cutting-edge technologies.</p>
+
 				</div>
 			</div>
 			<div class="row">
@@ -1042,7 +1046,7 @@ function playVideo() {
 							<i class="flaticon-analysis"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Web Design</h3>
+							<h3 class="mb-5">Data Analysis</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1054,7 +1058,7 @@ function playVideo() {
 							<i class="flaticon-flasks"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Phtography</h3>
+							<h3 class="mb-5">Research</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1066,7 +1070,7 @@ function playVideo() {
 							<i class="flaticon-ideas"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Web Developer</h3>
+							<h3 class="mb-5">Web Development</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1079,7 +1083,7 @@ function playVideo() {
 							<i class="flaticon-innovation"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">App Developing</h3>
+							<h3 class="mb-5">Machine Learning and AI</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1091,7 +1095,7 @@ function playVideo() {
 							<i class="flaticon-ux-design"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Branding</h3>
+							<h3 class="mb-5">Python</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1103,7 +1107,7 @@ function playVideo() {
 							<i class="flaticon-idea"></i>
 						</span>
 						<div class="desc">
-							<h3 class="mb-5">Product Strategy</h3>
+							<h3 class="mb-5">Business Strategy</h3>
 							<p>A small river named Duden flows by their place and supplies it with the necessary
 								regelialia.</p>
 						</div>
@@ -1119,75 +1123,156 @@ function playVideo() {
 			<div class="row no-gutters justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Our Projects</h2>
+					<h2 class="mb-4">My Projects</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 				</div>
 			</div>
 			<div class="row no-gutters">
+				<!-- Project 1 -->
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(images/work-1.jpg);">
 						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+						<div class="project-info">
+							<div class="project-meta">
+								<h3 class="project-title"><a href="#">AI-Powered Analytics Platform</a></h3>
+								<p class="project-subtitle">Business Intelligence Solution</p>
+								<div class="project-tags">
+									<span class="tag">Python</span>
+									<span class="tag">TensorFlow</span>
+									<span class="tag">Data Visualization</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
+				<!-- Project 2 -->
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/work-2.jpg);">
+						<div class="overlay"></div>
+						<div class="project-info">
+							<div class="project-meta">
+								<h3 class="project-title"><a href="#">Smart Chatbot System</a></h3>
+								<p class="project-subtitle">Natural Language Processing</p>
+								<div class="project-tags">
+									<span class="tag">Python</span>
+									<span class="tag">NLTK</span>
+									<span class="tag">Deep Learning</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
 						style="background-image: url(images/work-3.jpg);">
 						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+						<div class="project-info">
+							<div class="project-meta">
+								<h3 class="project-title"><a href="#">Computer Vision System</a></h3>
+								<p class="project-subtitle">Object Recognition Platform</p>
+								<div class="project-tags">
+									<span class="tag">OpenCV</span>
+									<span class="tag">PyTorch</span>
+									<span class="tag">CNN</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- Project 3 -->
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
+						style="background-image: url(images/work-3.jpg);">
 						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+						<div class="project-info">
+							<div class="project-meta">
+								<h3 class="project-title"><a href="#">Computer Vision System</a></h3>
+								<p class="project-subtitle">Object Recognition Platform</p>
+								<div class="project-tags">
+									<span class="tag">OpenCV</span>
+									<span class="tag">PyTorch</span>
+									<span class="tag">CNN</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>
+
+	<style>
+		.project {
+			position: relative;
+			overflow: hidden;
+			height: 400px;
+		}
+
+		.project-info {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #007bff;
+			padding: 20px;
+			color: white;
+			transform: translateY(100%);
+			transition: 0.3s all ease;
+		}
+
+		.project:hover .project-info {
+			transform: translateY(0);
+		}
+
+		.project-title {
+			font-size: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.project-subtitle {
+			font-size: 0.9rem;
+			color: #ffffff;
+			margin-bottom: 1rem;
+		}
+
+		.project-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+
+		.tag {
+			background: rgba(255, 255, 255, 0.1);
+			padding: 3px 10px;
+			border-radius: 15px;
+			font-size: 0.8rem;
+		}
+
+		.overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.3);
+			transition: 0.3s all ease;
+		}
+
+		.project-meta h3 a {
+			color: #fff;
+		}
+
+		.project:hover .overlay {
+			background: rgba(0, 0, 0, 0.5);
+		}
+	</style>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
 		<div class="container-fluid px-md-5">
@@ -1234,7 +1319,7 @@ function playVideo() {
 			<div class="row justify-content-center mb-5 pb-5">
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">Our Blog</h2>
+					<h2 class="mb-4">My Blog</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
 				</div>
 			</div>
@@ -1298,7 +1383,7 @@ function playVideo() {
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
 	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
 		<div class="overlay"></div>
@@ -1424,7 +1509,7 @@ function playVideo() {
 						<ul class="list-unstyled">
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Specialization</a></li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
 						</ul>
@@ -1432,7 +1517,7 @@ function playVideo() {
 				</div>
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Services</h2>
+						<h2 class="ftco-heading-2">Specialization</h2>
 						<ul class="list-unstyled">
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AI Application</a></li>
 							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
