@@ -1,557 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Ronaldo - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<head>
-  <title>Ronaldo - Free Bootstrap 4 Template by Colorlib</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+              .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
-  <link rel="stylesheet" href="css/aos.css">
+        .projects-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
 
-  <link rel="stylesheet" href="css/ionicons.min.css">
+        .projects-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
 
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .project-img {
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      margin-bottom: 1.5rem;
-      max-width: 100%;
-      height: auto;
-    }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 15px;
+        }
 
-    .tech-badge {
-      background-color: var(--light);
-      color: var(--dark);
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
-      display: inline-block;
-      font-size: 0.85rem;
-      font-weight: 500;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    }
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
 
-    .feature-icon {
-      font-size: 1.5rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
+        .project-image {
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            position: relative;
+        }
 
-    .timeline-item {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 2rem;
-    }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-    .timeline-item:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 2px;
-      height: 100%;
-      background-color: var(--primary);
-    }
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
 
-    .timeline-dot {
-      position: absolute;
-      left: -8px;
-      top: 0;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      background-color: var(--primary);
-    }
+        .tag {
+            background: var(--light);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
 
-    .btn-primary {
-      background-color: var(--primary);
-      border-color: var(--primary);
-      padding: 0.6rem 1.5rem;
-      font-weight: 500;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
+        .project-tech {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
 
-    .btn-primary:hover {
-      background-color: var(--secondary);
-      border-color: var(--secondary);
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(78, 84, 200, 0.3);
-    }
+        .project-title {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
 
-    .gallery-item {
-      height: 400px;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 0px;
-    }
+        .project-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
 
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.2s ease;
-    }
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
 
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
+        .project-link {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
 
-    .home-slider .owl-item img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+        .project-link:hover {
+            color: var(--primary);
+        }
 
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
 
-    .section-title {
-      position: relative;
-      margin-bottom: 2rem;
-      font-weight: 700;
-      color: var(--dark);
-      font-family: 'Poppins', sans-serif;
-    }
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: 2px solid var(--secondary);
+            background: transparent;
+            color: var(--secondary);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
 
-    .section-title:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      width: 50px;
-      height: 3px;
-      background: linear-gradient(to right, var(--primary), var(--secondary));
-      border-radius: 3px;
-    }
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
 
-    .highlight {
-      background: linear-gradient(120deg, rgba(78, 84, 200, 0.1), rgba(143, 148, 251, 0.1));
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
-      font-weight: 500;
-    }
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+  
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><span>R</span>ak.Ai</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
 
-    .sidebar-box {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero-wrap {
-        padding: 4rem 0 2rem;
-      }
-
-      .section-title {
-        font-size: 1.5rem;
-      }
-    }
-
-    .tagcloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      color: black;
-    }
-
-    .tagcloud a {
-      background: var(--primary);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      transition: background 0.3s ease;
-    }
-
-    .tagcloud a:hover {
-      background: var(--secondary);
-      color: white;
-      border: none;
-    }
-
-    .profile-image {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #ccc;
-    }
-  </style>
-</head>
-
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><span>R</span>onaldo</a>
-      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav nav ml-auto">
-          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
-          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
-          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
-          <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>Services</span></a></li>
-          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
-          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a></li>
-          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="hero-wrap js-fullheight">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-        <div class="col-lg-10 ftco-animate d-flex align-items-center">
-          <div class="text text-center">
-            <h1 class="mb-3 bread">Automated Generation System (B2C)</h1>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-                    class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i
-                    class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i
-                  class="ion-ios-arrow-forward"></i></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 ftco-animate">
-          <h2 class="mb-3">AI-Powered Business Automation Platform</h2>
-          <p>This research-driven project developed an advanced B2C automation platform that integrates cutting-edge
-            machine learning with enterprise software architecture. The system was designed to optimize business
-            processes through intelligent automation while maintaining scalability for enterprise deployment.</p>
-
-          <p>
-            <img src="https://apollouniversity.edu.in/blog/wp-content/uploads/2025/03/Artificial-Intelligence-1.jpg"
-              alt="System Architecture" class="img-fluid project-img image-popup">
-          </p>
-
-          <p>Key innovations included the development of a <span class="highlight">custom recommendation engine</span>
-            using graph neural networks to analyze customer behavior patterns, and a <span class="highlight">real-time
-              analytics dashboard</span> powered by SignalR for live data visualization.</p>
-
-          <p>The project resulted in a <span class="highlight">40% reduction</span> in manual processing time for client
-            businesses and was published in the IEEE International Conference on AI Applications (2023).</p>
-
-          <h2 class="mb-3 mt-5">Technical Implementation</h2>
-          <p>The system architecture followed a microservices approach with these core components:</p>
-
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-robot"></i>
-                </div>
-                <h4>AI Engine</h4>
-                <p>Custom TensorFlow models for predictive analytics and natural language processing tasks.</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-server"></i>
-                </div>
-                <h4>Backend Services</h4>
-                <p>ASP.NET Core Web API with Entity Framework for data persistence and business logic.</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-tachometer-alt"></i>
-                </div>
-                <h4>Real-time Dashboard</h4>
-                <p>Interactive visualization using D3.js and SignalR for live updates.</p>
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="fas fa-cloud"></i>
-                </div>
-                <h4>Cloud Deployment</h4>
-                <p>Azure Kubernetes Service for container orchestration and auto-scaling.</p>
-              </div>
-            </div>
-          </div>
-
-          <h2 class="mb-3 mt-5">Research Methodology</h2>
-          <p>The project followed an iterative research and development process:</p>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <h4>Phase 1: Problem Analysis</h4>
-            <p class="text-muted">Conducted interviews with 15 B2C businesses to identify pain points in their current
-              workflows.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <h4>Phase 2: Model Development</h4>
-            <p class="text-muted">Implemented and compared 3 different neural network architectures for the
-              recommendation system.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <h4>Phase 3: System Integration</h4>
-            <p class="text-muted">Developed RESTful APIs to connect the ML models with the web application frontend.</p>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <h4>Phase 4: Evaluation</h4>
-            <p class="text-muted">Conducted A/B testing with real users, achieving 87% accuracy in process automation.
-            </p>
-          </div>
-
-          <h2 class="mb-3 mt-5">Project Gallery</h2>
-          <div class="home-slider owl-carousel">
-            <div class="gallery-item">
-              <img src="https://apollouniversity.edu.in/blog/wp-content/uploads/2025/03/Artificial-Intelligence-1.jpg"
-                alt="UI Dashboard" class="image-popup">
-            </div>
-            <div class="gallery-item">
-              <img src="https://urbeuniversity.edu/post_assets/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU.webp"
-                alt="Model Training" class="image-popup">
-            </div>
-            <div class="gallery-item">
-              <img src="https://apollouniversity.edu.in/blog/wp-content/uploads/2025/03/Artificial-Intelligence-1.jpg"
-                alt="Code Snippet" class="image-popup">
-            </div>
-            <div class="gallery-item">
-              <img src="https://urbeuniversity.edu/post_assets/Le9zsr8bQmv7gmZW40UXiVaPsGcpVwaY65mw28tU.webp"
-                alt="Performance Metrics" class="image-popup">
-            </div>
-          </div>
-
-          <div class="tag-widget post-tag-container mb-5 mt-5">
-            <div class="tagcloud">
-              <a href="#" class="tag-cloud-link">Machine Learning</a>
-              <a href="#" class="tag-cloud-link">AI</a>
-              <a href="#" class="tag-cloud-link">ASP.NET</a>
-              <a href="#" class="tag-cloud-link">Cloud Computing</a>
-            </div>
-          </div>
-
-          <div class="about-author d-flex p-4 bg-light">
-            <div class="bio mr-4">
-              <img src="https://apollouniversity.edu.in/blog/wp-content/uploads/2025/03/Artificial-Intelligence-1.jpg"
-                alt="Researcher" class="profile-image mb-4 rounded-circle">
-            </div>
-            <div class="desc">
-              <h3>Project Lead</h3>
-              <p>This project was developed as part of my research in applied machine learning for business automation.
-                The system combines cutting-edge AI techniques with robust software engineering principles to deliver
-                measurable business value.</p>
-            </div>
-          </div>
-        </div> <!-- .col-md-8 -->
-
-        <div class="col-lg-4 sidebar ftco-animate">
-          <div class="sidebar-box">
-            <h3 class="heading-sidebar">Project Details</h3>
-            <div class="mb-4">
-              <h5 class="font-weight-bold">Timeline</h5>
-              <p><i class="far fa-calendar-alt mr-2 text-primary"></i> June 2022 - December 2022 (6 months)</p>
-            </div>
-
-            <div class="mb-4">
-              <h5 class="font-weight-bold">Technologies</h5>
-              <div class="d-flex flex-wrap mt-2">
-                <span class="tech-badge"><i class="fab fa-microsoft mr-1"></i> ASP.NET Core</span>
-                <span class="tech-badge"><i class="fas fa-project-diagram mr-1"></i> TensorFlow</span>
-                <span class="tech-badge"><i class="fas fa-database mr-1"></i> SQL Server</span>
-                <span class="tech-badge"><i class="fab fa-python mr-1"></i> Python</span>
-                <span class="tech-badge"><i class="fab fa-js mr-1"></i> JavaScript</span>
-                <span class="tech-badge"><i class="fab fa-docker mr-1"></i> Docker</span>
-                <span class="tech-badge"><i class="fab fa-azure mr-1"></i> Azure</span>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <h5 class="font-weight-bold">Research Areas</h5>
-              <ul class="list-unstyled">
-                <li><i class="fas fa-angle-right mr-2 text-primary"></i> Machine Learning</li>
-                <li><i class="fas fa-angle-right mr-2 text-primary"></i> Business Process Automation</li>
-                <li><i class="fas fa-angle-right mr-2 text-primary"></i> Recommendation Systems</li>
-                <li><i class="fas fa-angle-right mr-2 text-primary"></i> Cloud Computing</li>
-              </ul>
-            </div>
-
-            <div class="mb-4">
-              <h5 class="font-weight-bold">Project Links</h5>
-              <a href="#" class="btn btn-primary btn-block mb-2">
-                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
-              </a>
-              <a href="#" class="btn btn-outline-primary btn-block mb-2">
-                <i class="fab fa-github mr-1"></i> GitHub Repository
-              </a>
-              <a href="#" class="btn btn-outline-primary btn-block">
-                <i class="fas fa-file-pdf mr-1"></i> Research Paper
-              </a>
-            </div>
-          </div>
-
-          <div class="sidebar-box">
-            <h3 class="heading-sidebar">Key Metrics</h3>
-            <div class="block-21 mb-4">
-              <div class="text">
-                <h4 class="heading"><i class="fas fa-chart-line text-primary mr-2"></i> 87% Accuracy</h4>
-                <p>Automation accuracy across all business processes</p>
-              </div>
-            </div>
-            <div class="block-21 mb-4">
-              <div class="text">
-                <h4 class="heading"><i class="fas fa-clock text-primary mr-2"></i> 40% Faster</h4>
-                <p>Reduction in manual processing time</p>
-              </div>
-            </div>
-            <div class="block-21 mb-4">
-              <div class="text">
-                <h4 class="heading"><i class="fas fa-bolt text-primary mr-2"></i> 23% Performance Gain</h4>
-                <p>Over baseline models</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="sidebar-box">
-            <h3 class="heading-sidebar">Related Projects</h3>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4"
-                style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInZ5cTv4C9rDBynlD0V-rMNJvq9plliSzJg&s);"></a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Medical AI Diagnostics</a></h3>
-                <p>Deep learning for disease detection</p>
-              </div>
-            </div>
-            <div class="block-21 mb-4 d-flex">
-              <a class="blog-img mr-4"
-                style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInZ5cTv4C9rDBynlD0V-rMNJvq9plliSzJg&s);"></a>
-              <div class="text">
-                <h3 class="heading"><a href="#">Blockchain AI Verification</a></h3>
-                <p>Fraud detection in blockchain networks</p>
-              </div>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Specialization</span></a>
+					</li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	  <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<h1 class="mb-3 bread">Projects</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="projects.html">Projects <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <footer class="ftco-footer ftco-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About</h2>
-            <p>Driven to create intelligent solutions that make a meaningful impact in the real world.</p>
-            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4 ml-md-4">
-            <h2 class="ftco-heading-2">Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Specialization</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Specialization</h2>
-            <ul class="list-unstyled">
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AI Application</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Intelligent Solutions</a>
-              </li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-              <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Database Design</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">Joydebpur, Gazipur,
-                    Dhaka, Bangladesh</span></li>
-                <li><a href="#"><span class="icon icon-phone"></span><span class="text">
-                      +8801913339246</span></a></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span
-                      class="text">rakibul.rk2@gmail.com</span></a></li>
-              </ul>
+		
+		<header class="projects-header">
+            <h1>Technical Projects</h1>
+            <p>Showcasing my work in Software Development, Machine Learning, and Data Science</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">ML/DL</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
+        </header>
 
-          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved <i
-              class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Rakibul Islam</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww" alt="Project 1">
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Deep Learning</span>
+                    <span class="tag">Computer Vision</span>
+                </div>
+                <h3 class="project-title">Image Classification System</h3>
+                <p class="project-description">
+                    Developed a CNN model using TensorFlow for medical image classification with 95% accuracy.
+                </p>
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-brain"></i>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-meta">
+                    <span>Jun 2023</span>
+                    <a href="#" class="project-link">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-category="software">
+                <div class="project-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww" alt="Project 2">
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Web Development</span>
+                    <span class="tag">E-Commerce</span>
+                </div>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">
+                    Full-stack development of a React/Node.js e-commerce platform with payment integration.
+                </p>
+                <div class="project-tech">
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-node"></i>
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-meta">
+                    <span>Mar 2023</span>
+                    <a href="#" class="project-link">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-category="data-science">
+                <div class="project-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFjaGluZSUyMGxlYXJuaW5nfGVufDB8fDB8fHww" alt="Project 3">
+                </div>
+                <div class="project-tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Visualization</span>
+                </div>
+                <h3 class="project-title">Sales Prediction Model</h3>
+                <p class="project-description">
+                    Time series analysis and forecasting model for retail sales prediction using ARIMA and LSTM.
+                </p>
+                <div class="project-tech">
+                    <i class="fab fa-python"></i>
+                    <i class="fas fa-chart-bar"></i>
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="project-meta">
+                    <span>Jan 2023</span>
+                    <a href="#" class="project-link">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-category="ml">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/400x200?text=NLP" alt="Project 4">
+                </div>
+                <div class="project-tags">
+                    <span class="tag">NLP</span>
+                    <span class="tag">Transformers</span>
+                </div>
+                <h3 class="project-title">Text Summarization API</h3>
+                <p class="project-description">
+                    Built a BERT-based text summarization service with Flask and Docker deployment.
+                </p>
+                <div class="project-tech">
+                    <i class="fas fa-robot"></i>
+                    <i class="fab fa-docker"></i>
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="project-meta">
+                    <span>Dec 2022</span>
+                    <a href="#" class="project-link">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
         </div>
-      </div>
     </div>
-  </footer>
 
+    <script>
+        // Filter projects
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
 
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                
+                projectCards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>Driven to create intelligent solutions that make a meaningful impact in the real world.</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Specialization</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Specialization</h2>
+						<ul class="list-unstyled">
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AI Application</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Intelligent Solutions</a>
+							</li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Database Design</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">Joydebpur, Gazipur,
+										Dhaka, Bangladesh</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">
+											+8801913339246</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">rakibul.rk2@gmail.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved <i
+							class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
+							target="_blank">Rakibul Islam</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    
+  
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -566,9 +435,8 @@
   <script src="js/aos.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-
+  
   <script src="js/main.js"></script>
-
-</body>
-
+    
+  </body>
 </html>
