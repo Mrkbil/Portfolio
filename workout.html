@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrkbil</title>
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter (Modern) & Merriweather (Academic accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        academic: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        },
+                        accent: '#2563eb' // Royal Blue
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-base-100 text-base-content font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Page Background -->
+<div class="bg-slate-50 min-h-screen pb-20">
+
+    <!-- HERO SECTION: Title & Stats -->
+    <section class="bg-slate-900 text-white relative overflow-hidden pt-24 pb-16 px-4">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="badge badge-accent badge-outline mb-4 uppercase tracking-widest font-bold">12 Week Transformation</div>
+            <h1 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-600">
+                The Bengal Tiger <br class="hidden md:block" /> Bulk & Cut System
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8 font-light">
+                This is your "Bible". Stop searching. The 100% best plan customized for the Bangladeshi context.
+            </p>
+            
+            <!-- User Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto bg-slate-800/50 p-4 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                <div class="text-center">
+                    <div class="text-xs text-slate-500 uppercase">Profile</div>
+                    <div class="font-bold text-white">Male, 25 Years</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xs text-slate-500 uppercase">Weight</div>
+                    <div class="font-bold text-white">72kg</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xs text-slate-500 uppercase">Schedule</div>
+                    <div class="font-bold text-amber-400">5 On / 2 Off</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-xs text-slate-500 uppercase">Goal</div>
+                    <div class="font-bold text-amber-400">Muscle + Abs</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 space-y-12">
+
+        <!-- 🟢 PHASE 1: PREPARATION -->
+        <div class="card bg-white shadow-xl border-l-8 border-emerald-500">
+            <div class="card-body">
+                <h2 class="text-2xl font-black text-slate-800 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm">1</span>
+                    PHASE 1: THE PREPARATION
+                </h2>
+                <p class="text-sm text-slate-500 italic mb-4">Do not touch a heavy weight until this is done.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Step 1 -->
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-emerald-700 mb-2">1️⃣ General Warm-up (3–4 min)</h3>
+                        <p class="text-sm text-slate-600">Treadmill (Brisk walk), Cycle, or Jumping Jacks.</p>
+                        <p class="text-xs text-slate-400 mt-1">Goal: Heart rate ~110 bpm.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-emerald-700 mb-2">2️⃣ Joint Prep (4–5 min)</h3>
+                        <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                            <li><strong class="text-slate-800">Upper Days:</strong> Arm Circles, Band Pull-aparts, Rotator Cuff.</li>
+                            <li><strong class="text-slate-800">Lower Days:</strong> Hip Circles, BW Squats, Lunges.</li>
+                        </ul>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-emerald-100">
+                        <h3 class="font-bold text-emerald-700 mb-2">3️⃣ Neural Activation</h3>
+                        <p class="text-xs text-slate-500 mb-2">Before FIRST big lift only (e.g., Bench/Squat):</p>
+                        <div class="text-sm space-y-1 font-mono text-slate-700">
+                            <div>Set 1: Empty Bar × 15 (Fast)</div>
+                            <div>Set 2: 50% Weight × 8</div>
+                            <div>Set 3: 70% Weight × 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!-- 🔴 PHASE 2: THE WORKOUT -->
+<section>
+    <div class="flex items-center gap-3 mb-6">
+        <span class="w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold text-sm">2</span>
+        <h2 class="text-3xl font-black text-slate-900 uppercase">Phase 2: The Workout</h2>
+    </div>
+
+    <!-- Golden Rules Alert -->
+    <div class="alert bg-slate-800 text-white shadow-lg mb-8">
+        <i class="fa-solid fa-triangle-exclamation text-amber-400"></i>
+        <div>
+            <h3 class="font-bold text-amber-400">⚠️ THE GOLDEN RULES</h3>
+            <div class="text-xs md:text-sm opacity-90 grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-2 mt-1">
+                <span><strong class="text-white">Rest:</strong> Compounds 3m, Iso 60s, Supersets 45s.</span>
+                <span><strong class="text-white">Tempo:</strong> 2-1-1 (2s down, 1s squeeze, 1s up).</span>
+                <span><strong class="text-white">Hydration:</strong> Sip 1.5L Water + Pink Salt.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORKOUT CARDS CONTAINER -->
+    <div class="space-y-8">
+
+        <!-- DAY 1 -->
+        <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden group">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                <div>
+                    <h3 class="font-bold text-lg"><i class="fa-solid fa-fire text-orange-500 mr-2"></i> DAY 1: PUSH</h3>
+                    <p class="text-xs text-slate-400">Chest / Side Delt / Triceps</p>
+                </div>
+                <div class="badge badge-warning font-bold">Upper Width</div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="table table-zebra w-full text-sm">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500">
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/incline-db-press.webp" alt="Incline DB Press" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Incline DB Press</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>8–10</td>
+                            <td>Bench at 30°. Stretch deep.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/flat-bench-press.webp" alt="Flat Bench Press" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Flat Bench Press</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">3</td>
+                            <td>6–8</td>
+                            <td class="text-red-500 font-semibold">Heavy power builder. (3 min rest)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/pec-deck.webp" alt="Pec Deck / Cable Fly" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Pec Deck / Cable Fly</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">3</td>
+                            <td>12–15</td>
+                            <td>Squeeze 1s at center.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/lateral-raises.webp" alt="Lateral Raises (DB)" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Lateral Raises (DB)</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>12–15</td>
+                            <td>Lead with elbows. Pinky up.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/overhead-tricep-ext.webp" alt="Overhead Tricep Ext" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Overhead Tricep Ext</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>10–12</td>
+                            <td>Stretch the long head.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/tricep-rope-pushdown.webp" alt="Tricep Rope Pushdown" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Tricep Rope Pushdown</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">3</td>
+                            <td>15</td>
+                            <td>Spread rope at bottom.</td>
+                        </tr>
+                        <tr class="bg-orange-50">
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/cable-crunch.webp" alt="Weighted Cable Crunch" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Weighted Cable Crunch</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>10–12</td>
+                            <td>Heavy Abs. Blow air out.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-slate-50 p-3 text-xs border-t border-slate-200 flex gap-2 items-center">
+                <span class="badge badge-sm badge-outline">Add-on</span>
+                <span>Plank (2x60s) OR Dead Bug (2x12/side)</span>
+            </div>
+        </div>
+
+        <!-- DAY 2 -->
+        <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden group">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                <div>
+                    <h3 class="font-bold text-lg"><i class="fa-solid fa-fire text-orange-500 mr-2"></i> DAY 2: PULL</h3>
+                    <p class="text-xs text-slate-400">Back / Rear Delt / Biceps</p>
+                </div>
+                <div class="badge badge-info font-bold">V-Taper</div>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="table table-zebra w-full text-sm">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500">
+                            <th>Exercise</th>
+                            <th>Sets</th>
+                            <th>Reps</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/pull-ups.webp" alt="Pull-Ups" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Pull-Ups</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>Fail</td>
+                            <td>Wide grip.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/barbell-row.webp" alt="Barbell Row" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Barbell Row</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>8–10</td>
+                            <td class="text-red-500 font-semibold">Torso parallel. (3 min rest)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/lat-pulldown.webp" alt="Lat Pulldown (V-Grip)" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Lat Pulldown (V-Grip)</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">3</td>
+                            <td>10–12</td>
+                            <td>Drive elbows down.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/face-pulls.webp" alt="Face Pulls" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Face Pulls</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>15</td>
+                            <td>Squeeze rear delts.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/barbell-bicep-curl.webp" alt="Barbell Bicep Curl" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Barbell Bicep Curl</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>8–10</td>
+                            <td>Strict form. No swinging.</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/hammer-curl.webp" alt="Hammer Curls" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Hammer Curls</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">3</td>
+                            <td>10–12</td>
+                            <td>Cross-body style.</td>
+                        </tr>
+                        <tr class="bg-blue-50">
+                            <td>
+                                <div class="flex items-center gap-3">
+                                    <img src="/images/exercises/hanging-leg-raises.webp" alt="Hanging Leg Raises" class="w-12 h-12 rounded-lg object-cover border border-slate-200" />
+                                    <span>Hanging Leg Raises</span>
+                                </div>
+                            </td>
+                            <td class="font-bold">4</td>
+                            <td>12–15</td>
+                            <td>Curl hips up.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-slate-50 p-3 text-xs border-t border-slate-200 flex gap-2 items-center">
+                <span class="badge badge-sm badge-outline">Add-on</span>
+                <span>Hanging Decompression (2x30s) + Child’s Pose (1 min)</span>
+            </div>
+        </div>
+
+        <!-- DAY 3 -->
+        <div class="card bg-slate-100 border border-slate-200 border-dashed">
+            <div class="card-body p-4 flex flex-row items-center gap-4">
+                <div class="p-3 bg-slate-200 rounded-full text-slate-500"><i class="fa-solid fa-bed text-2xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-lg text-slate-600">DAY 3: ACTIVE REST & VACUUM</h3>
+                    <ul class="text-sm text-slate-500 mt-1 list-disc list-inside">
+                        <li><strong>Gym:</strong> OFF.</li>
+                        <li><strong>Vacuum:</strong> 4 sets × 20 sec hold (Morning, empty stomach).</li>
+                        <li><strong>Cardio:</strong> 30 min brisk walk (Outdoors).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- DAY 4 -->
+<div class="card bg-white border border-slate-200 shadow-sm overflow-hidden group">
+    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+        <div>
+            <h3 class="font-bold text-lg"><i class="fa-solid fa-fire text-orange-500 mr-2"></i> DAY 4: LEGS</h3>
+            <p class="text-xs text-slate-400">Quads / Hams / Glutes</p>
+        </div>
+        <div class="badge badge-error font-bold">Growth</div>
+    </div>
+    <div class="overflow-x-auto">
+        <table class="table table-zebra w-full text-sm">
+            <thead>
+                <tr class="bg-slate-50 text-slate-500">
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/squat.webp" alt="Squats (Barbell)" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Squats (Barbell)</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">4</td>
+                    <td>6–8</td>
+                    <td class="text-red-500 font-semibold">Break parallel. (3 min rest)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/romanian-deadlift.webp" alt="Romanian Deadlift" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Romanian Deadlift</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">4</td>
+                    <td>8–10</td>
+                    <td class="text-red-500 font-semibold">Hips back. (3 min rest)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/walking-lunge.webp" alt="Walking Lunges" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Walking Lunges</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>20 steps</td>
+                    <td>Metabolism Hack. Hold DBs.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/leg-extension.webp" alt="Leg Extension" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Leg Extension</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>15</td>
+                    <td>Hold top for 1s.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/lying-leg-curl.webp" alt="Lying Leg Curl" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Lying Leg Curl</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>12</td>
+                    <td>Control the negative.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/standing-calf-raise.webp" alt="Standing Calf Raise" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Standing Calf Raise</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">5</td>
+                    <td>15</td>
+                    <td>Hold bottom stretch 2s.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bg-slate-50 p-3 text-xs border-t border-slate-200 flex gap-2 items-center">
+        <span class="badge badge-sm badge-outline">Add-on</span>
+        <span>Hanging Decompression (2x30s) + Child’s Pose (2 mins)</span>
+    </div>
+</div>
+
+
+<!-- DAY 5 -->
+<div class="card bg-white border border-slate-200 shadow-sm overflow-hidden group">
+    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+        <div>
+            <h3 class="font-bold text-lg"><i class="fa-solid fa-fire text-orange-500 mr-2"></i> DAY 5: AESTHETICS</h3>
+            <p class="text-xs text-slate-400">Upper Chest / Shoulder / Arms</p>
+        </div>
+        <div class="badge badge-accent font-bold">Shirt Fit</div>
+    </div>
+    <div class="overflow-x-auto">
+        <table class="table table-zebra w-full text-sm">
+            <thead>
+                <tr class="bg-slate-50 text-slate-500">
+                    <th>Exercise</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/overhead-press.webp" alt="Overhead Press" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Overhead Press</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">4</td>
+                    <td>6–8</td>
+                    <td>Standing Barbell. Core tight.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/incline-db-fly.webp" alt="Incline DB Fly" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Incline DB Fly</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>12</td>
+                    <td>Upper chest stretch focus.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/lateral-raises-cable.webp" alt="Lateral Raises (Cable)" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Lateral Raises (Cable)</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">4</td>
+                    <td>15</td>
+                    <td>Constant tension.</td>
+                </tr>
+                <tr class="bg-purple-50">
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/superset-arms.webp" alt="SUPERSET: Arms" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>SUPERSET: Arms</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">4</td>
+                    <td>10+10</td>
+                    <td>Incline Curl + Tricep Dips.</td>
+                </tr>
+                <tr class="bg-purple-50">
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/superset-forearms.webp" alt="SUPERSET: Forearms" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>SUPERSET: Forearms</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>15+15</td>
+                    <td>Wrist Curls + Reverse Curls.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex items-center gap-3">
+                            <img src="/images/exercises/cable-woodchoppers.webp" alt="Cable Woodchoppers" class="w-12 h-12 rounded-lg object-cover border border-slate-200"/>
+                            <span>Cable Woodchoppers</span>
+                        </div>
+                    </td>
+                    <td class="font-bold">3</td>
+                    <td>15</td>
+                    <td>Obliques.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+        <!-- WEEKEND -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card bg-slate-100 border border-slate-200 border-dashed p-4">
+                 <h3 class="font-bold text-slate-600">💤 DAY 6: ACTIVE RECOVERY</h3>
+                 <p class="text-sm text-slate-500 mt-2">Sport (Cricket/Badminton) OR 45 min steady cardio.</p>
+                 <p class="text-xs text-slate-400 mt-1">Vacuum: 5x20s | Abs: 10 mins.</p>
+            </div>
+            <div class="card bg-slate-100 border border-slate-200 border-dashed p-4">
+                 <h3 class="font-bold text-slate-600">💤 DAY 7: DEEP REST</h3>
+                 <p class="text-sm text-slate-500 mt-2">Sleep 9 Hours. High Protein, Lower Carb.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- 🧘 PHASE 3 & 4: COOLDOWN & NUTRITION -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <!-- COOLDOWN -->
+            <div class="card bg-blue-50 border border-blue-100">
+                <div class="card-body">
+                    <h2 class="text-xl font-bold text-blue-900 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-blue-200 text-blue-700 flex items-center justify-center text-xs">3</span>
+                        PHASE 3: THE COOL DOWN
+                    </h2>
+                    <p class="text-xs text-blue-800 mb-4">Do not skip. Lowers cortisol for growth.</p>
+                    <ul class="space-y-3 text-sm text-blue-900">
+                        <li><i class="fa-solid fa-check mr-2 text-blue-500"></i> <strong>Chest Stretch:</strong> Doorway (30s).</li>
+                        <li><i class="fa-solid fa-check mr-2 text-blue-500"></i> <strong>Lat Stretch:</strong> Lean back holding pole (30s).</li>
+                        <li><i class="fa-solid fa-check mr-2 text-blue-500"></i> <strong>Hip Flexor:</strong> Lunge, hips forward (30s).</li>
+                        <li><i class="fa-solid fa-check mr-2 text-blue-500"></i> <strong>Hamstring:</strong> Toe touch (30s).</li>
+                        <li><i class="fa-solid fa-wind mr-2 text-blue-500"></i> <strong>Breathing:</strong> 5 Deep Belly Breaths (In 4s, Out 6s).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- NUTRITION -->
+            <div class="card bg-orange-50 border border-orange-100">
+                <div class="card-body">
+                    <h2 class="text-xl font-bold text-orange-900 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-full bg-orange-200 text-orange-700 flex items-center justify-center text-xs">4</span>
+                        PHASE 4: 3000 KCAL BD DIET
+                    </h2>
+                    <div class="space-y-3 text-sm text-slate-700 mt-2">
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Break:</span>
+                            <span>3 Eggs (1 Yolk) + 1 Cup Oats + Banana.</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Snack:</span>
+                            <span>Handful Peanuts (Cheap fat).</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Lunch:</span>
+                            <span>250g Rice (Miniket) + 150g Chicken + <span class="uppercase font-bold text-green-600">BIG Salad</span>.</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Pre:</span>
+                            <span>Black Coffee (Tk 10 packet) + 2 Digestive Biscuits.</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Intra:</span>
+                            <span>1.5L Water + Salt + (Optional Glucose-D).</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-bold text-orange-700 w-16">Dinner:</span>
+                            <span>150g Rice + 150g Chicken/Fish + Dal.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- 🚀 PROGRESSIVE OVERLOAD SYSTEM -->
+        <section class="mt-12 mb-16">
+            <h2 class="text-3xl font-black text-slate-900 uppercase mb-6 flex items-center gap-3">
+                <span class="w-8 h-8 rounded-full bg-slate-900 text-amber-500 flex items-center justify-center font-bold text-sm"><i class="fa-solid fa-chart-line"></i></span>
+                The Growth Algorithm
+            </h2>
+
+            <!-- Main Logic Card -->
+            <div class="card bg-slate-900 text-white shadow-2xl overflow-hidden relative border-t-4 border-amber-500">
+                <!-- Background Blob -->
+                <div class="absolute top-0 right-0 p-40 bg-amber-600 rounded-full mix-blend-overlay filter blur-3xl opacity-10"></div>
+
+                <div class="card-body p-6 md:p-10">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                        <div>
+                            <h3 class="text-2xl font-bold text-amber-400 uppercase italic">The "Double Progression" Rule</h3>
+                            <p class="text-slate-400 text-sm mt-1">Stop guessing. Follow this loop for every single exercise.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 badge badge-outline text-slate-300 p-3">Methodology: Volumetric Overload</div>
+                    </div>
+
+                    <!-- The 3 Step Process -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+
+                        <!-- Step 1 -->
+                        <div class="relative pl-6 border-l-4 border-slate-700 group hover:border-amber-500 transition-colors duration-300">
+                            <div class="absolute -left-3 top-0 w-6 h-6 bg-slate-700 text-slate-300 group-hover:bg-amber-500 group-hover:text-black rounded-full flex items-center justify-center text-xs font-bold transition-all">1</div>
+                            <h4 class="font-bold text-white text-lg mb-2">Pick Your Weight</h4>
+                            <p class="text-sm text-slate-400">
+                                Select a weight where you can hit the <strong class="text-white">Bottom of the Range</strong> (e.g., 8 reps) with perfect form, leaving 1-2 reps in the tank.
+                            </p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative pl-6 border-l-4 border-slate-700 group hover:border-amber-500 transition-colors duration-300">
+                            <div class="absolute -left-3 top-0 w-6 h-6 bg-slate-700 text-slate-300 group-hover:bg-amber-500 group-hover:text-black rounded-full flex items-center justify-center text-xs font-bold transition-all">2</div>
+                            <h4 class="font-bold text-white text-lg mb-2">Earn the Reps</h4>
+                            <p class="text-sm text-slate-400">
+                                Keep the <strong>same weight</strong> every week. Your only goal is to add reps until you hit the <strong class="text-white">Top of the Range</strong> (e.g., 12 reps) for ALL sets.
+                            </p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative pl-6 border-l-4 border-slate-700 group hover:border-emerald-500 transition-colors duration-300">
+                            <div class="absolute -left-3 top-0 w-6 h-6 bg-slate-700 text-slate-300 group-hover:bg-emerald-500 group-hover:text-black rounded-full flex items-center justify-center text-xs font-bold transition-all">3</div>
+                            <h4 class="font-bold text-white text-lg mb-2">Level Up</h4>
+                            <p class="text-sm text-slate-400">
+                                Once you hit top reps on all sets, add the <strong class="text-emerald-400">smallest plate (1.25kg - 2.5kg)</strong>. Your reps will drop back to the bottom. Repeat Step 1.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Warning Footer -->
+                    <div class="mt-10 pt-6 border-t border-slate-800 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-skull text-red-500 text-xl"></i>
+                            <div>
+                                <span class="block text-white font-bold text-sm">FORM FAILURE = NO COUNT</span>
+                                <span class="text-xs text-slate-500">If you swing your body, the rep is 0.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 md:justify-end">
+                            <i class="fa-solid fa-book text-blue-400 text-xl"></i>
+                            <div>
+                                <span class="block text-white font-bold text-sm">LOG OR STAY SMALL</span>
+                                <span class="text-xs text-slate-500">Use 'Hevy' App or a Notebook.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div class="alert bg-red-50 border-l-8 border-red-500 shadow-sm rounded-r-lg rounded-l-none">
+                    <div>
+                        <h4 class="font-bold text-red-900 text-sm uppercase flex items-center gap-2">
+                            <i class="fa-solid fa-road-barrier"></i> Stuck / Plateaued?
+                        </h4>
+                        <p class="text-xs text-red-800 mt-1">
+                            If you can't add a rep for 2 weeks straight: <br/>
+                            1. Check sleep/food. <br/>
+                            2. If good, <strong>Drop weight by 10%</strong> and rebuild form.
+                        </p>
+                    </div>
+                </div>
+                <div class="alert bg-amber-50 border-l-8 border-amber-500 shadow-sm rounded-r-lg rounded-l-none">
+                    <div>
+                        <h4 class="font-bold text-amber-900 text-sm uppercase flex items-center gap-2">
+                            <i class="fa-solid fa-weight-hanging"></i> The "BD Gym" Problem
+                        </h4>
+                        <p class="text-xs text-amber-800 mt-1">
+                            Bangladeshi gyms often lack small plates. Bring your own <strong>0.5kg water bottles</strong> to hang on the bar if the jump from 5kg to 10kg is too heavy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- TRACKING LOGIC -->
+        <div class="card bg-slate-900 text-slate-300 p-6 md:p-8 rounded-2xl">
+            <h3 class="text-lg font-bold text-white mb-4 uppercase tracking-widest text-center">Measurement Strategy</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-4 bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-1">⚖️ ⬆️ &nbsp; 📏 ↔️</div>
+                    <div class="text-emerald-400 font-bold">PERFECT</div>
+                    <div class="text-xs text-slate-500">Muscle Gain</div>
+                </div>
+                <div class="p-4 bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-1">⚖️ ⬆️ &nbsp; 📏 ⬆️</div>
+                    <div class="text-red-400 font-bold">FAT GAIN</div>
+                    <div class="text-xs text-slate-500">Cut 200kcal Rice</div>
+                </div>
+                <div class="p-4 bg-slate-800 rounded-lg border border-slate-700">
+                    <div class="text-2xl mb-1">⚖️ ↔️ &nbsp; 📏 ⬇️</div>
+                    <div class="text-blue-400 font-bold">RECOMP</div>
+                    <div class="text-xs text-slate-500">Good, keep going</div>
+                </div>
+            </div>
+
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <div class="bg-slate-800 p-4 rounded-lg">
+                    <strong class="text-white block mb-1">📉 The Deload Rule (Week 7)</strong>
+                    Do this exact plan, but use <span class="text-amber-400">50% of weight</span> and only 2 sets. Heals tendons and CNS.
+                </div>
+                <div class="bg-slate-800 p-4 rounded-lg">
+                    <strong class="text-white block mb-1">🍚 The "Rice" Trap</strong>
+                    In BD, we love rice. Measure it. If abs blur, <span class="text-red-400">reduce rice at dinner</span>, not lunch.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

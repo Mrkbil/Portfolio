@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrkbil</title>
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter (Modern) & Merriweather (Academic accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        academic: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        },
+                        accent: '#2563eb' // Royal Blue
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-base-100 text-base-content font-sans antialiased min-h-screen flex flex-col">
+
+<div class="bg-slate-50 min-h-screen pb-20 font-sans text-slate-900">
+
+    <!-- HERO SECTION -->
+    <section class="bg-emerald-950 text-white relative overflow-hidden pt-28 pb-20 px-4">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500 rounded-full mix-blend-overlay filter blur-3xl opacity-10 animate-pulse"></div>
+        <div class="max-w-6xl mx-auto relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter mb-4">
+                🏋️ Office Warrior <span class="text-emerald-400">3000 kcal</span> Bulk Plan
+            </h1>
+            <p class="text-emerald-200 font-bold tracking-widest text-lg mb-8 uppercase">Bangladesh Edition</p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl min-w-[140px]">
+                    <p class="text-xs uppercase opacity-70">Target</p>
+                    <p class="text-xl font-bold">3000 kcal</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl min-w-[140px]">
+                    <p class="text-xs uppercase opacity-70">Protein</p>
+                    <p class="text-xl font-bold">165–180g</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl min-w-[140px]">
+                    <p class="text-xs uppercase opacity-70">Fat</p>
+                    <p class="text-xl font-bold">60–70g</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl min-w-[140px]">
+                    <p class="text-xs uppercase opacity-70">Carbs</p>
+                    <p class="text-xl font-bold">~400–450g</p>
+                </div>
+            </div>
+            <p class="mt-8 text-emerald-300 font-medium italic">Goal: Lean muscle gain + visible abs</p>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 -mt-10 relative z-20 space-y-8">
+
+        <!-- HYDRATION & EXCRETION -->
+        <div class="card bg-white shadow-xl border-l-8 border-blue-500 overflow-hidden">
+            <div class="card-body">
+                <h2 class="card-title text-2xl font-black uppercase text-slate-800"><i class="fa-solid fa-droplet text-blue-500"></i> 💧 Hydration & Excretion Protocol</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+                    <ul class="space-y-2 text-slate-700">
+                        <li><strong>Total Water:</strong> 4–4.5 L/day</li>
+                        <li><strong>Morning:</strong> 500ml–1L warm water → toilet</li>
+                        <li><strong>Office:</strong> 1–1.5 L</li>
+                        <li><strong>Pre/During Gym:</strong> 1.5 L water + pinch of pink salt</li>
+                    </ul>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <p class="text-sm font-bold text-blue-800">Tip:</p>
+                        <p class="text-sm text-blue-700 italic">If constipated → 500ml warm water immediately after waking + squat position (use stool for feet)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUPPLEMENT STACK -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card bg-slate-900 text-white shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-xl font-bold uppercase"><i class="fa-solid fa-capsules text-emerald-400"></i> 💊 Supplement Stack</h2>
+                    <ul class="space-y-2 mt-2 text-slate-300">
+                        <li><span class="text-emerald-400 font-bold">Creatine Monohydrate:</span> 5g/day (pre or post-workout)</li>
+                        <li><span class="text-emerald-400 font-bold">Multivitamin:</span> 1 tab with breakfast</li>
+                        <li><span class="text-emerald-400 font-bold">Omega-3 (Fish Oil):</span> 1–2 caps with dinner</li>
+                        <li><span class="text-emerald-400 font-bold">Optional Whey:</span> Only if eggs/milk insufficient</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-amber-500 text-slate-900 shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title text-xl font-bold uppercase"><i class="fa-solid fa-clock"></i> ⏰ Daily Rhythm</h2>
+                    <ul class="space-y-2 mt-2 font-medium">
+                        <li><strong>Wake Up:</strong> 6:30 AM – Warm water + toilet</li>
+                        <li><strong>Core Work:</strong> Stomach Vacuum 3–4 sets x 20 sec</li>
+                        <li><strong>Gym Time:</strong> 8:00 PM – 10:00 PM</li>
+                        <li><strong>Sleep:</strong> Lights out by 12:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+ <!-- DAILY NUTRITION TIMELINE -->
+<div class="space-y-8 max-w-5xl mx-auto">
+
+  <h2 class="text-4xl font-black text-center text-slate-800 uppercase italic mb-8">
+    📅 Daily Nutrition Timeline (Perfect Clean Bulk – BD)
+  </h2>
+
+  <!-- MEAL 1 -->
+  <div class="card bg-white shadow-lg border border-slate-200 overflow-hidden">
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-blue-600 text-white p-6 md:w-56 text-center flex flex-col justify-center">
+        <span class="text-sm font-bold uppercase opacity-80">Meal 1</span>
+        <span class="text-3xl font-black italic mt-1">07:00 AM</span>
+        <p class="text-xs mt-2 uppercase">Morning Kickstart</p>
+      </div>
+      <div class="p-6 flex-grow">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-xl font-bold text-blue-700">Slow Carbs + Energy</h3>
+          <div class="badge badge-lg badge-outline font-bold">≈500 kcal</div>
+        </div>
+        <ul class="list-disc list-inside space-y-1 text-slate-700 font-medium">
+          <li>1 Cup Oats – <b>150 kcal</b> (Alt: Chira)</li>
+          <li>1 Banana – <b>100 kcal</b> (Alt: Papaya)</li>
+          <li>1 tsp Honey – <b>20 kcal</b> (Alt: Gur)</li>
+          <li>30g Peanuts – <b>170 kcal</b> (Alt: Roasted Chana)</li>
+          <li>Black Coffee – <b>5 kcal</b> (optional)</li>
+        </ul>
+        <div class="mt-4 flex gap-4 text-xs font-bold text-slate-500 uppercase border-t pt-3">
+          <span>P: 18g</span> <span>C: 60g</span> <span>F: 15g</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEAL 2 -->
+  <div class="card bg-white shadow-lg border border-slate-200 overflow-hidden">
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-emerald-600 text-white p-6 md:w-56 text-center flex flex-col justify-center">
+        <span class="text-sm font-bold uppercase opacity-80">Meal 2</span>
+        <span class="text-3xl font-black italic mt-1">10:30 AM</span>
+        <p class="text-xs mt-2 uppercase">Protein Builder</p>
+      </div>
+      <div class="p-6 flex-grow">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-xl font-bold text-emerald-700">Protein + Strength</h3>
+          <div class="badge badge-lg badge-outline font-bold">≈650 kcal</div>
+        </div>
+        <ul class="list-disc list-inside space-y-1 text-slate-700 font-medium">
+          <li>2 Atta Roti – <b>240 kcal</b> (Alt: Chapati)</li>
+          <li>1.5 Cups Dal + Veg – <b>200 kcal</b> (Alt: Chola Dal)</li>
+          <li>3 Boiled Eggs – <b>210 kcal</b> (Alt: 150g Chicken)</li>
+          <li>10 Almonds – <b>70 kcal</b> (Alt: 15g Peanuts)</li>
+        </ul>
+        <div class="mt-4 flex gap-4 text-xs font-bold text-slate-500 uppercase border-t pt-3">
+          <span>P: 40g</span> <span>C: 85g</span> <span>F: 18g</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEAL 3 -->
+  <div class="card bg-white shadow-lg border border-slate-200 overflow-hidden">
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-slate-800 text-white p-6 md:w-56 text-center flex flex-col justify-center">
+        <span class="text-sm font-bold uppercase opacity-80">Meal 3</span>
+        <span class="text-3xl font-black italic mt-1">01:30 PM</span>
+        <p class="text-xs mt-2 uppercase">Main Growth Meal</p>
+      </div>
+      <div class="p-6 flex-grow">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-xl font-bold text-slate-800">Heavy Carbs + Protein</h3>
+          <div class="badge badge-lg badge-outline font-bold">≈950 kcal</div>
+        </div>
+        <ul class="list-disc list-inside space-y-1 text-slate-700 font-medium">
+          <li>2.5 Cups Rice – <b>500 kcal</b> (Alt: Khichuri)</li>
+          <li>250g Chicken – <b>350 kcal</b> (Alt: Rui / Tilapia)</li>
+          <li>1 Cup Veg – <b>50 kcal</b></li>
+          <li>1.5 tsp Ghee – <b>45 kcal</b> (Alt: Mustard oil)</li>
+          <li>Cucumber / Tomato – <b>Negligible</b></li>
+        </ul>
+        <div class="mt-4 flex gap-4 text-xs font-bold text-slate-500 uppercase border-t pt-3">
+          <span>P: 55g</span> <span>C: 130g</span> <span>F: 26g</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MEAL 4 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="card bg-white shadow-lg border border-slate-200 p-6">
+      <span class="font-black text-amber-700">05:00 PM</span>
+      <h3 class="font-black text-slate-800 mt-2">Light Sustainer</h3>
+      <ul class="text-sm mt-2 space-y-1 text-slate-700">
+        <li>Apple / Guava – <b>80 kcal</b></li>
+        <li>20g Peanuts – <b>120 kcal</b> (Alt: Chana)</li>
+        <li>Green Tea – <b>0 kcal</b></li>
+<li class="font-bold text-amber-600">
+  Creatine Monohydrate 5g – <b>0 kcal</b>
+</li>
+      </ul>
+    </div>
+
+    <!-- MEAL 5 -->
+    <div class="card bg-white shadow-lg border border-slate-200 p-6">
+      <span class="font-black text-red-700">06:00 PM</span>
+      <h3 class="font-black text-slate-800 mt-2">Pre-Workout Fuel</h3>
+      <ul class="text-sm mt-2 space-y-1 text-slate-700">
+        <li>1 Banana – <b>100 kcal</b></li>
+        <li>1 tsp Honey – <b>20 kcal</b></li>
+        <li>Salt + Water – <b>0 kcal</b></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MEAL 6 -->
+  <div class="card bg-slate-900 text-white shadow-xl border-2 border-emerald-500">
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-emerald-500 p-6 md:w-56 text-center flex flex-col justify-center">
+        <span class="text-sm font-bold uppercase">Meal 6</span>
+        <span class="text-3xl font-black italic">10:30 PM</span>
+      </div>
+      <div class="p-6 flex-grow">
+        <h3 class="font-bold text-xl text-emerald-300">Recovery + Overnight Growth</h3>
+    <ul class="list-disc list-inside space-y-1 text-slate-200 mt-3">
+  <li>1 Cup Boiled Chola – <b>260 kcal</b></li>
+  <li>150g Chicken / 4 Egg Whites – <b>180 kcal</b></li>
+  <li>1 Atta Roti – <b>120 kcal</b></li>
+  <li>1 Cup Moong Dal – <b>150 kcal</b></li>
+  <li>Low-Fat Milk – <b>100 kcal</b></li>
+  <li class="font-bold text-emerald-300">
+    Multivitamin – <b>0 kcal</b>
+  </li>
+  <li class="font-bold text-emerald-300">
+    Fish Oil (Omega-3) 1–2 Capsules – <b>0 kcal</b>
+  </li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+        <!-- HYDRATION CHART -->
+        <div class="card bg-white shadow-xl overflow-hidden border border-slate-200">
+            <div class="bg-blue-600 p-4">
+                <h3 class="text-white font-black text-center uppercase tracking-widest"><i class="fa-solid fa-bottle-water mr-2"></i> Office Warrior Daily Hydration Plan</h3>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="table w-full text-xs">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-600 uppercase font-black">
+                            <th>Time / Phase</th>
+                            <th>Amount</th>
+                            <th>Notes / Tips</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-700">
+                        <tr><td>6:30 AM (Wake Up)</td><td class="font-bold">500ml – 1L</td><td>Warm water; kickstarts metabolism, reduces bloating</td></tr>
+                        <tr><td>Breakfast 1 (7:00 AM)</td><td class="font-bold">100–150ml</td><td>Sip slowly; do not chug</td></tr>
+                        <tr><td>Commute (7:30–9:00 AM)</td><td class="font-bold">250–300ml</td><td>Small sips; avoid large volume on bus</td></tr>
+                        <tr><td>Office Hours</td><td class="font-bold">1–1.5 L</td><td>Sip throughout morning and lunch</td></tr>
+                        <tr><td>Commute Home</td><td class="font-bold">250–300ml</td><td>Stay hydrated but avoid full stomach before gym</td></tr>
+                        <tr class="bg-emerald-50 font-bold"><td>Gym (8:00–10:00 PM)</td><td>1–1.5 L</td><td>Regular sips with a pinch of pink salt</td></tr>
+                        <tr><td>Dinner & Bed</td><td class="font-bold">300ml</td><td>Recovery sips; avoid excess before sleep</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!-- COOKING GUIDELINES SECTION -->
+<div class="card bg-white shadow-xl overflow-hidden border-l-4 border-emerald-500">
+    <div class="p-6">
+        <h3 class="text-2xl font-black text-slate-800 uppercase mb-4 italic flex items-center gap-2">
+            🍳 Cooking & Preparation Guidelines
+        </h3>
+
+        <ul class="list-disc list-inside space-y-2 text-slate-700 font-medium">
+            <li><strong>Rice:</strong> Boil 1–2 cups per meal. Optional 1 tsp ghee for flavor. Avoid frying in oil.</li>
+            <li><strong>Roti:</strong> Whole wheat (atta). Roll thin, cook on non-stick tawa. Minimal oil if needed.</li>
+            <li><strong>Chicken:</strong> Grill, bake, or curry with < 2 tsp oil. Avoid creamy sauces.</li>
+            <li><strong>Eggs:</strong> Boil or omelette with minimal oil. Avoid deep frying.</li>
+            <li><strong>Dal (Lentils/Chola):</strong> Boil until soft. Add minimal ghee or oil. Add seasonal veggies.</li>
+            <li><strong>Vegetables:</strong> Steam, sauté lightly, or eat raw. Avoid deep frying.</li>
+            <li><strong>Oats:</strong> Cook with water or low-fat milk. Add fruits or 1 tsp honey for taste.</li>
+            <li><strong>Nuts (Almonds, Peanuts):</strong> Soak overnight. Eat raw or lightly roasted.</li>
+            <li><strong>Pre/Post Workout:</strong> Banana + boiled chickpeas. Optional low-fat milk post-workout. Creatine 5g in water.</li>
+            <li><strong>General Oil/Fat:</strong> Use < 1–2 tsp per cooking if needed. Prefer ghee, olive oil, or mustard oil for flavor.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- FOODS TO AVOID SECTION -->
+<div class="card bg-white shadow-xl overflow-hidden mt-8 border-l-4 border-red-500">
+    <div class="p-6">
+        <h3 class="text-2xl font-black text-slate-800 uppercase mb-4 italic flex items-center gap-2">
+            🚫 Foods to Avoid (Priority)
+        </h3>
+
+        <ol class="list-decimal list-inside space-y-2 text-slate-700 font-medium">
+            <li><strong>Sugary drinks:</strong> Soft drinks, sweetened juice, energy drinks – high empty calories.</li>
+            <li><strong>Fried foods:</strong> Samosa, puri, pakora, french fries – high in trans fats.</li>
+            <li><strong>Processed snacks:</strong> Chips, biscuits, packaged cakes – high in sugar and refined carbs.</li>
+            <li><strong>Excess oil:</strong> Avoid deep frying or using large amounts of oil in cooking.</li>
+            <li><strong>High-fat dairy:</strong> Cream, butter in large amounts, full-fat milk – adds unnecessary fat.</li>
+            <li><strong>Refined carbs:</strong> White bread, white pasta, instant noodles – low satiety, spike insulin.</li>
+            <li><strong>Fast food:</strong> Burger, pizza, fried chicken – high calories, low nutrition.</li>
+            <li><strong>Alcohol & sweets:</strong> Cakes, ice cream, chocolate bars – sugar + fat = belly fat.</li>
+        </ol>
+
+        <p class="mt-4 text-sm text-slate-500 italic flex items-center gap-1">
+            ⚡ <span>Tip:</span> Prioritize lean protein, complex carbs, fiber-rich veggies, and healthy fats to support 6-pack abs.
+        </p>
+    </div>
+</div>
+
+<div class="card bg-white shadow-xl overflow-hidden">
+    <div class="p-6">
+        <h3 class="text-2xl font-black text-slate-800 uppercase mb-4 italic">📋 BD Food Macro & Effect Cheat-Sheet</h3>
+        <div class="overflow-x-auto">
+            <table class="table table-compact w-full text-sm">
+                <thead class="bg-slate-50">
+                    <tr>
+                        <th>Food Item</th>
+                        <th>Qty</th>
+                        <th>Kcal</th>
+                        <th>P</th>
+                        <th>C</th>
+                        <th>F</th>
+                        <th>Effect / Tip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Everyday staples -->
+                    <tr><td class="font-bold">White Rice</td><td>1 Cup</td><td>205</td><td>4g</td><td>45g</td><td>0.4g</td><td>Good energy; can spike blood sugar if excessive</td></tr>
+                    <tr><td class="font-bold">Chicken Curry (Broiler)</td><td>100g</td><td>180</td><td>20g</td><td>5g</td><td>8g</td><td>Lean protein; avoid oily gravy</td></tr>
+                    <tr><td class="font-bold">Egg (Whole)</td><td>1 Large</td><td>78</td><td>6g</td><td>1g</td><td>5g</td><td>Super protein; yolk good fats & micronutrients</td></tr>
+                    <tr><td class="font-bold">Boiled Chola (Chickpeas)</td><td>1 Cup</td><td>270</td><td>15g</td><td>45g</td><td>4g</td><td>Great pre-gym; high fiber, protein</td></tr>
+                    <tr><td class="font-bold">Tandoori Roti (Whole wheat)</td><td>1 pc</td><td>110</td><td>3g</td><td>20g</td><td>2g</td><td>Good carb source; better than Maida roti</td></tr>
+                    <tr><td class="font-bold">Mixed Dal</td><td>1 Cup</td><td>230</td><td>14g</td><td>40g</td><td>5g</td><td>High protein + fiber; digest slowly</td></tr>
+                    <tr><td class="font-bold">Almonds</td><td>10 pcs</td><td>70</td><td>2g</td><td>2g</td><td>6g</td><td>Healthy fats; eat soaked for digestion</td></tr>
+
+                    <!-- Meats & seafood -->
+                    <tr><td class="font-bold">Beef Bhuna</td><td>100g</td><td>280</td><td>22g</td><td>2g</td><td>20g</td><td>High fat; limit oily portions</td></tr>
+                    <tr><td class="font-bold">Hilsa Fish (Ilish, fried)</td><td>100g</td><td>320</td><td>22g</td><td>0g</td><td>25g</td><td>Good omega-3, avoid frying for health</td></tr>
+                    <tr><td class="font-bold">Rui / Catla Fish (Grilled)</td><td>100g</td><td>180</td><td>20g</td><td>0g</td><td>10g</td><td>Lean protein; heart-friendly</td></tr>
+                    <tr><td class="font-bold">Mutton Curry</td><td>100g</td><td>290</td><td>23g</td><td>2g</td><td>22g</td><td>High protein but high fat; limit curry oil</td></tr>
+
+                    <!-- Fast food / fried snacks -->
+                    <tr><td class="font-bold">Fried Singara / Samosa</td><td>1 pc</td><td>200</td><td>3g</td><td>25g</td><td>10g</td><td>High fat + carb; promotes belly fat</td></tr>
+                    <tr><td class="font-bold">Shingara / Vegetable Patties</td><td>1 pc</td><td>180</td><td>2g</td><td>22g</td><td>8g</td><td>Eat occasionally; mostly empty calories</td></tr>
+                    <tr><td class="font-bold">French Fries</td><td>100g</td><td>312</td><td>3g</td><td>41g</td><td>15g</td><td>High calorie; avoid frequent</td></tr>
+                    <tr><td class="font-bold">Chicken Nuggets / Fast Food</td><td>100g</td><td>290</td><td>15g</td><td>20g</td><td>15g</td><td>Processed, high fat; occasional treat</td></tr>
+
+                    <!-- Street foods -->
+                    <tr><td class="font-bold">Fuchka / Pani Puri</td><td>6 pcs</td><td>150</td><td>3g</td><td>30g</td><td>2g</td><td>Mostly carbs; avoid daily</td></tr>
+                    <tr><td class="font-bold">Chotpoti</td><td>1 Plate</td><td>180</td><td>5g</td><td>28g</td><td>4g</td><td>Spicy, carbs-heavy; moderate intake</td></tr>
+                    <tr><td class="font-bold">Egg Roll / Bun</td><td>1 Roll</td><td>250</td><td>12g</td><td>30g</td><td>8g</td><td>Protein decent, high carbs & oil</td></tr>
+
+                    <!-- Drinks & dessert -->
+                    <tr><td class="font-bold">Ice Cream (1 scoop)</td><td>100g</td><td>207</td><td>4g</td><td>24g</td><td>11g</td><td>High sugar + fat; occasional treat</td></tr>
+                    <tr><td class="font-bold">Soft Drink (Coke / Pepsi)</td><td>250ml</td><td>105</td><td>0g</td><td>26g</td><td>0g</td><td>Empty calories; avoid for fat loss</td></tr>
+                    <tr><td class="font-bold">Tea (Sweet, 1 cup)</td><td>200ml</td><td>50</td><td>0g</td><td>12g</td><td>1g</td><td>Limit sugar; caffeine okay in moderation</td></tr>
+                    <tr><td class="font-bold">Coffee (Black)</td><td>1 cup</td><td>2</td><td>0g</td><td>0g</td><td>0g</td><td>Zero calories; good pre-workout</td></tr>
+
+                    <!-- Other common foods -->
+                    <tr><td class="font-bold">Moong Dal / Masoor Dal</td><td>1 Cup</td><td>230</td><td>14g</td><td>40g</td><td>5g</td><td>High protein, digestible</td></tr>
+                    <tr><td class="font-bold">Potol / Lau / Lauki (Boiled)</td><td>1 Cup</td><td>30</td><td>1g</td><td>7g</td><td>0g</td><td>Low calorie, fiber-rich</td></tr>
+                    <tr><td class="font-bold">Banana</td><td>1 Medium</td><td>105</td><td>1g</td><td>27g</td><td>0g</td><td>Great pre/post workout carb</td></tr>
+                    <tr><td class="font-bold">Papaya / Guava</td><td>1 Cup</td><td>55</td><td>1g</td><td>14g</td><td>0g</td><td>Fiber + vitamins; aids digestion</td></tr>
+                    <tr><td class="font-bold">Peanuts / Roasted Chana</td><td>40g</td><td>200</td><td>10g</td><td>8g</td><td>15g</td><td>Healthy fat/protein snack</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+        <!-- SPECIAL SECTIONS (Fridays, Execution, foundations) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card bg-slate-800 text-white p-6 shadow-xl">
+                <h3 class="font-black text-xl mb-4 text-emerald-400">🕌 Fridays & Holidays</h3>
+                <ul class="space-y-3 text-sm">
+                    <li>• <strong>Sleep in:</strong> 8:00–9:00 AM (Recovery focus)</li>
+                    <li>• <strong>Brunch (10 AM):</strong> Combine Breakfast 1 & 2 (Oats, milk, banana, eggs)</li>
+                    <li>• <strong>Lunch:</strong> Standard rice/chicken/veg</li>
+                    <li>• <strong>Optional:</strong> Stretching, foam rolling, or light cardio</li>
+                </ul>
+            </div>
+
+            <div class="card bg-emerald-50 border border-emerald-200 p-6 shadow-xl">
+                <h3 class="font-black text-xl mb-4 text-emerald-800">📝 Critical Execution Tips</h3>
+                <ul class="space-y-3 text-sm text-emerald-900">
+                    <li>• <strong>Cucumber First:</strong> 5–10 mins before main meals</li>
+                    <li>• <strong>Soak Beans:</strong> Chola/Dal/Almonds to reduce gas</li>
+                    <li>• <strong>Avoid:</strong> Sugar tea, singara/samosa, late-night junk</li>
+                    <li>• <strong>Sleep:</strong> Minimum 6.5–7 hours</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LONGEVITY -->
+        <div class="card bg-white shadow-xl p-8 border border-slate-200">
+            <h2 class="text-2xl font-black text-slate-800 mb-6 text-center">🔑 THE LONG-TERM FOUNDATION</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div>
+                    <h4 class="font-bold text-emerald-600 mb-2">Nutrition</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Protein (1.5–2g/kg), Complex carbs, and Healthy fats. Variety is key—rotate your vegetables.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-blue-600 mb-2">Movement</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">4–5x Resistance training, 2–3x Cardio (20 mins), and daily flexibility work to prevent injury.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-amber-600 mb-2">Recovery</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">7–8 hours sleep. No screens 1 hour before bed. Use sunlight (15 mins) for vitamin D.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-red-600 mb-2">Lifestyle</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Stress management. Avoid smoking/alcohol. Annual blood tests (Cholesterol, D3, Kidney).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12 mb-8">
+            <p class="font-black text-slate-400 text-lg uppercase italic">Consistency > Perfection. 4+ Weeks for results. 💪🇧🇩</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
