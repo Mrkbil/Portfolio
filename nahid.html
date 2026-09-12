@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="lofi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Aesthetic System</title>
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        academic: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            500: '#64748b',
+                            900: '#0f172a',
+                        },
+                        accent: '#2563eb'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-base-100 text-base-content font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Page Background -->
+<div class="bg-slate-50 min-h-screen pb-20">
+
+    <!-- HERO SECTION: Title & Stats -->
+    <section class="bg-slate-900 text-white relative overflow-hidden pt-20 pb-16 px-4">
+        <div class="absolute top-0 right-0 w-72 h-72 bg-amber-500 rounded-full mix-blend-multiply filter blur-3xl opacity-15"></div>
+        <div class="absolute bottom-0 left-0 w-72 h-72 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-15"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="badge badge-accent badge-outline mb-3 uppercase tracking-widest font-bold text-xs">Beginner Foundation • Month 1</div>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black uppercase italic tracking-tight mb-3 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-amber-300">
+        Beginner Aesthetic + Endurance System
+            </h1>
+            <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-6 font-light">
+                A structured 5-day recomposition guide built to carve out the upper body V-taper, build foundational leg drive, and develop aerobic capacity at steady body weight.
+            </p>
+            
+            <!-- User Stats Grid (Updated for 73kg / 5'8" / Maintenance) -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto bg-slate-800/60 p-4 rounded-2xl border border-slate-700 backdrop-blur-sm">
+                <div class="text-center">
+                    <div class="text-[11px] text-slate-400 uppercase tracking-wider">Profile & Height</div>
+                    <div class="font-bold text-white text-sm md:text-base">Male, 26y | 5'8" (173cm)</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[11px] text-slate-400 uppercase tracking-wider">Current Weight</div>
+                    <div class="font-bold text-amber-400 text-sm md:text-base">73 kg (Hold / Recomp)</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[11px] text-slate-400 uppercase tracking-wider">Maintenance Calories</div>
+                    <div class="font-bold text-emerald-400 text-sm md:text-base">~2,450 kcal / day</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-[11px] text-slate-400 uppercase tracking-wider">Daily Protein</div>
+                    <div class="font-bold text-amber-400 text-sm md:text-base">120g – 150g / day</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 -mt-6 relative z-20 space-y-10">
+
+        <!-- 🟢 ONBOARDING INTENSITY: FIRST MONTH RIR RAMP -->
+        <div class="card bg-white shadow-xl border-l-8 border-amber-500">
+            <div class="card-body p-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-3">
+                    <h2 class="text-xl font-black text-slate-900 flex items-center gap-2">
+                        <i class="fa-solid fa-gauge-high text-amber-500"></i>
+                        MONTH 1 INTENSITY RAMP (REPS IN RESERVE - RIR)
+                    </h2>
+                    <span class="badge badge-warning text-xs font-bold uppercase">No 1RM Testing • Zero Failure on Compounds</span>
+                </div>
+                <p class="text-xs md:text-sm text-slate-600 mb-4">
+                    At 73kg, the first month is dedicated to mastering motor mechanics, stabilizing core anti-extension, and building work capacity without triggering joint inflammation.
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl text-center">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Week 1</span>
+                        <div class="text-xl font-black text-slate-800 my-1">3–4 RIR</div>
+                        <p class="text-[11px] text-slate-500">Stop with 3 to 4 crisp, clean reps left in reserve.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl text-center">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Week 2</span>
+                        <div class="text-xl font-black text-slate-800 my-1">~3 RIR</div>
+                        <p class="text-[11px] text-slate-500">Increase confidence while keeping 3 solid reps in the tank.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl text-center">
+                        <span class="text-xs font-bold text-slate-400 uppercase block">Week 3</span>
+                        <div class="text-xl font-black text-slate-800 my-1">2–3 RIR</div>
+                        <p class="text-[11px] text-slate-500">Lock in heavier sets while keeping strict form.</p>
+                    </div>
+                    <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-xl text-center">
+                        <span class="text-xs font-bold text-emerald-600 uppercase block">Week 4</span>
+                        <div class="text-xl font-black text-emerald-800 my-1">~2 RIR</div>
+                        <p class="text-[11px] text-emerald-700">Challenging working sets with textbook technique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🟢 PHASE 1: PREPARATION & WARM-UP -->
+        <div class="card bg-white shadow-md border-l-8 border-emerald-500">
+            <div class="card-body p-6">
+                <h2 class="text-xl font-black text-slate-800 flex items-center gap-3">
+                    <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold">1</span>
+                    PHASE 1: THE BEGINNER WARM-UP (8–10 MIN)
+                </h2>
+                <p class="text-xs text-slate-500 italic mb-3">Prime the central nervous system and lubricate shoulder/hip capsules before touching working resistance.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                        <h3 class="font-bold text-emerald-700 text-sm mb-1">1️⃣ General Cardio (5–8 min)</h3>
+                        <p class="text-xs text-slate-600">Brisk treadmill walk, cycle, or gentle row.</p>
+                        <p class="text-[11px] text-slate-400 mt-1">Goal: Light sweat & elevated heart rate (~110 bpm).</p>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-slate-100">
+                        <h3 class="font-bold text-emerald-700 text-sm mb-1">2️⃣ Dynamic Mobility (3–4 min)</h3>
+                        <ul class="text-xs text-slate-600 space-y-1 list-disc list-inside">
+                            <li><strong>Upper Days:</strong> Arm swings, band pull-aparts, doorway chest stretch.</li>
+                            <li><strong>Lower Days:</strong> Hip circles, bodyweight squats, walking lunges.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-3 rounded-lg border border-emerald-100">
+                        <h3 class="font-bold text-emerald-700 text-sm mb-1">3️⃣ Movement Primer Sets</h3>
+                        <p class="text-[11px] text-slate-500 mb-1">Prior to the day's first big compound lift:</p>
+                        <div class="text-xs font-mono text-slate-700 space-y-0.5">
+                            <div>• Warm-up 1: Empty Bar / Very light × 12</div>
+                            <div>• Warm-up 2: ~50% target load × 6</div>
+                            <div>• Working sets commence at ~3 RIR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🔴 PHASE 2: THE 5-DAY WORKOUT ROUTINE -->
+        <section>
+            <div class="flex items-center gap-3 mb-6">
+                <span class="w-8 h-8 rounded-full bg-red-100 text-red-600 flex items-center justify-center font-bold text-sm">2</span>
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-black text-slate-900 uppercase">Phase 2: The Weekly Split</h2>
+                    <p class="text-xs md:text-sm text-slate-500">Push / Pull / Legs / Active Rest / Upper Aesthetics / Lower & Endurance / Full Rest</p>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+
+                <!-- DAY 1: PUSH -->
+                <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                        <div>
+                            <h3 class="font-bold text-base md:text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-fire text-orange-500"></i> DAY 1: PUSH (Upper Chest + Shoulder Width + Triceps)
+                            </h3>
+                            <p class="text-xs text-slate-400">Build the broad aesthetic clavicle line and arm pressing strength</p>
+                        </div>
+                        <div class="badge badge-warning font-bold text-xs">Shoulders & Triceps</div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600">
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps</th>
+                                    <th>Rest</th>
+                                    <th>Form Focus & Coaching Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/incline-db-press.webp" alt="Incline DB Press" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Incline+DB'" />
+                                            <span class="font-semibold">Incline Dumbbell Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>2–3 min</td>
+                                    <td>Upper chest focus. Set bench to 30° incline to avoid front delt dominance.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/flat-bench-press.webp" alt="Bench Press" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Bench'" />
+                                            <span class="font-semibold">Machine or Barbell Bench Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>2–3 min</td>
+                                    <td>Pectoral stretch at base. Keep shoulder blades pinched back and down.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/overhead-press.webp" alt="Shoulder Press" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=OHP'" />
+                                            <span class="font-semibold">Machine Shoulder Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>8–12</td>
+                                    <td>2 min</td>
+                                    <td>Safe, fixed overhead line for beginners. Keep core tight and avoid lower back arch.</td>
+                                </tr>
+                                <tr class="bg-amber-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lateral-raises.webp" alt="Lateral Raise" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=DB+Raise'" />
+                                            <span class="font-semibold text-amber-950">Cable / Dumbbell Lateral Raise</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-amber-950">3</td>
+                                    <td class="text-amber-950">12–15</td>
+                                    <td class="text-amber-950">60 sec</td>
+                                    <td><span class="text-amber-700 font-semibold">Lateral delt sweep for width. Lead slightly with elbows; no torso swinging.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/cable-fly.webp" alt="Cable Fly" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Fly'" />
+                                            <span class="font-semibold">Cable Fly</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>12–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Deep squeeze at midline. Maintain a soft bend in the elbows.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/tricep-rope-pushdown.webp" alt="Rope Pushdown" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Pushdown'" />
+                                            <span class="font-semibold">Rope Triceps Pushdown</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Flare rope apart at bottom lockout. Keep elbows glued to the ribcage.</td>
+                                </tr>
+                                <tr class="bg-emerald-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/overhead-triceps-ext.webp" alt="Overhead Tricep Ext" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Overhead'" />
+                                            <span class="font-semibold text-emerald-950">Overhead Triceps Extension</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-emerald-950">2</td>
+                                    <td class="text-emerald-950">10–15</td>
+                                    <td class="text-emerald-950">60–90 sec</td>
+                                    <td><span class="text-emerald-700 font-semibold">Targets long head of triceps. Safe stretch for upper arm thickness.</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DAY 2: PULL -->
+                <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                        <div>
+                            <h3 class="font-bold text-base md:text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-feather text-cyan-400"></i> DAY 2: PULL (V-Taper + Back Thickness + Biceps)
+                            </h3>
+                            <p class="text-xs text-slate-400">Develop wide lats, erect posture, and dense forearm & bicep mass</p>
+                        </div>
+                        <div class="badge badge-info font-bold text-xs">V-Taper Builder</div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600">
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps</th>
+                                    <th>Rest</th>
+                                    <th>Form Focus & Coaching Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-blue-50/40">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lat-pulldown.webp" alt="Lat Pulldown" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Lat+Pull'" />
+                                            <span class="font-semibold text-blue-950">Lat Pulldown</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-blue-950">3</td>
+                                    <td class="text-blue-950">8–12</td>
+                                    <td class="text-blue-950">2 min</td>
+                                    <td><span class="text-blue-700 font-semibold">Beginner pull-up replacement. Lean back slightly; drive elbows down toward pockets.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/chest-supported-row.webp" alt="Seated Cable Row" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Cable+Row'" />
+                                            <span class="font-semibold">Seated Cable Row</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>90 sec</td>
+                                    <td>Mid-back thickness. Pull handle to navel and squeeze shoulder blades together.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/t-bar-row.webp" alt="Chest Supported Row" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=CS+Row'" />
+                                            <span class="font-semibold">Chest-Supported Row</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>8–12</td>
+                                    <td>90 sec</td>
+                                    <td>Pad supports the chest; completely removes axial strain from beginner lower back.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/straight-arm-pulldown.webp" alt="Straight Arm Pulldown" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Lat+Sweep'" />
+                                            <span class="font-semibold">Straight-Arm Pulldown</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>12–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Isolates lat sweep without bicep fatigue. Keep elbows locked with a slight bend.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/face-pulls.webp" alt="Face Pull" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Face+Pull'" />
+                                            <span class="font-semibold">Face Pull / Rear-Delt Fly</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>12–15</td>
+                                    <td>60 sec</td>
+                                    <td>Rear delts & rotator cuffs. Crucial for counteracting desk slouch and rounded shoulders.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/barbell-bicep-curl.webp" alt="EZ Curl" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Curl'" />
+                                            <span class="font-semibold">Dumbbell or EZ-Bar Curl</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–12</td>
+                                    <td>60–90 sec</td>
+                                    <td>Biceps peak development. Strict tempo: 2 seconds down, 1 second squeeze.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/hammer-curl.webp" alt="Hammer Curl" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Hammer'" />
+                                            <span class="font-semibold">Hammer Curl</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>10–15</td>
+                                    <td>60 sec</td>
+                                    <td>Neutral grip. Hits the brachialis to push the bicep up and add forearm girth.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DAY 3: LEGS + CORE + ENDURANCE -->
+                <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                        <div>
+                            <h3 class="font-bold text-base md:text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-person-walking text-emerald-400"></i> DAY 3: LEGS + CORE + ENDURANCE
+                            </h3>
+                            <p class="text-xs text-slate-400">Foundational leg drive, core bracing stability, and light aerobic flush</p>
+                        </div>
+                        <div class="badge badge-success font-bold text-xs text-white">Legs + Core</div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600">
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps / Time</th>
+                                    <th>Rest</th>
+                                    <th>Form Focus & Coaching Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/squat.webp" alt="Goblet Squat" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Squat'" />
+                                            <span class="font-semibold">Goblet Squat &rarr; Barbell Squat</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>2–3 min</td>
+                                    <td>Start with Goblet Squat to learn upright torso & depth. Graduate to Barbell once solid.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/leg-press.webp" alt="Leg Press" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Leg+Press'" />
+                                            <span class="font-semibold">Leg Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–15</td>
+                                    <td>90 sec</td>
+                                    <td>Safe quad volume. Place feet mid-platform; do not let lower back round off pad.</td>
+                                </tr>
+                                <tr class="bg-emerald-50/40">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/bulgarian-split-squat.webp" alt="Bulgarian Split Squat" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Split+Squat'" />
+                                            <span class="font-semibold text-emerald-950">Bulgarian Split Squat</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-emerald-950">2 / leg</td>
+                                    <td class="text-emerald-950">8–12</td>
+                                    <td class="text-emerald-950">90 sec</td>
+                                    <td><span class="text-emerald-700 font-semibold">Fixes unilateral strength discrepancies between legs. Hold light DBs.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lying-leg-curl.webp" alt="Leg Curl" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Leg+Curl'" />
+                                            <span class="font-semibold">Leg Curl (Lying or Seated)</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Direct hamstring stimulus. Control the lowering phase over 2 seconds.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/standing-calf-raise.webp" alt="Calf Raise" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Calf'" />
+                                            <span class="font-semibold">Standing Calf Raise</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–15</td>
+                                    <td>60 sec</td>
+                                    <td>Full extension on toes with a 1-second pause at the bottom stretch.</td>
+                                </tr>
+                                <!-- ABS -->
+                                <tr class="bg-orange-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/cable-crunch.webp" alt="Cable Crunch" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Crunch'" />
+                                            <span class="font-semibold text-orange-950">Cable Crunch</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-orange-950">3</td>
+                                    <td class="text-orange-950">10–15</td>
+                                    <td class="text-orange-950">60 sec</td>
+                                    <td>Spinal flexion. Pull elbows toward knees using abs, keeping hips stationary.</td>
+                                </tr>
+                                <tr class="bg-orange-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/reverse-crunch.webp" alt="Reverse Crunch" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Reverse'" />
+                                            <span class="font-semibold text-orange-950">Reverse Crunch</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-orange-950">2</td>
+                                    <td class="text-orange-950">12–15</td>
+                                    <td class="text-orange-950">45–60 sec</td>
+                                    <td>Lower ab builder. Roll pelvis toward rib cage; avoid using leg momentum.</td>
+                                </tr>
+                                <tr class="bg-orange-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/plank.webp" alt="Plank" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Plank'" />
+                                            <span class="font-semibold text-orange-950">Plank</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-orange-950">2</td>
+                                    <td class="text-orange-950">30–60 sec</td>
+                                    <td class="text-orange-950">45 sec</td>
+                                    <td>Anti-extension stability. Squeeze glutes, push into forearms, lock the ribcage.</td>
+                                </tr>
+                                <!-- ENDURANCE -->
+                                <tr class="bg-cyan-50/70">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/incline-walk.webp" alt="Cardio" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Endurance'" />
+                                            <span class="font-semibold text-cyan-950">🚴 Easy / Moderate Endurance</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-cyan-950">1</td>
+                                    <td class="text-cyan-950">10–15 min</td>
+                                    <td class="text-cyan-950">Steady</td>
+                                    <td><span class="text-cyan-800 font-semibold">Gentle stationary cycle or incline treadmill walk. Flushes leg metabolites.</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DAY 4: REST / WALKING -->
+                <div class="card bg-slate-100 border border-slate-200 border-dashed p-5 flex flex-col md:flex-row items-center gap-4 shadow-sm">
+                    <div class="p-3 bg-slate-200 rounded-full text-slate-600"><i class="fa-solid fa-bed text-2xl"></i></div>
+                    <div>
+                        <h3 class="font-black text-slate-800 text-base uppercase tracking-wider">💤 DAY 4: ACTIVE RECOVERY & STEP TARGET</h3>
+                        <p class="text-xs md:text-sm text-slate-600 mt-0.5">
+                            No weight training. Rest does not mean lying completely still in bed. Aim for <strong>7,000–10,000 steps</strong> at a relaxed pace to keep metabolic flow high and promote CNS systemic repair.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DAY 5: UPPER AESTHETICS -->
+                <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                        <div>
+                            <h3 class="font-bold text-base md:text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-shirt text-amber-400"></i> DAY 5: UPPER AESTHETIC (The Visual 3D Day)
+                            </h3>
+                            <p class="text-xs text-slate-400">Priority: Lateral delts + Lats sweep + Upper chest + Full arm sleeve fullness</p>
+                        </div>
+                        <div class="badge badge-accent font-bold text-xs uppercase">Aesthetic Focus</div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600">
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps</th>
+                                    <th>Rest</th>
+                                    <th>Form Focus & Coaching Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/incline-db-press.webp" alt="Incline DB" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Incline+DB'" />
+                                            <span class="font-semibold">Incline DB Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>2 min</td>
+                                    <td>Upper pectoral clavicular head emphasis. Smooth lowering; 2s eccentric.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lat-pulldown.webp" alt="Lat Pulldown" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Lat+Pull'" />
+                                            <span class="font-semibold">Lat Pulldown</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>90 sec - 2 min</td>
+                                    <td>Sweep the lats wide. Creates the sharp angle dropping into the waist.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/chest-supported-row.webp" alt="Cable Row" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Row'" />
+                                            <span class="font-semibold">Cable / Machine Row</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>10–12</td>
+                                    <td>90 sec</td>
+                                    <td>Mid-back posture. Retract scapulae hard at peak contraction for 1 full second.</td>
+                                </tr>
+                                <tr class="bg-amber-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lateral-raises-cable.webp" alt="Cable Lateral Raise" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Cable+Raise'" />
+                                            <span class="font-semibold text-amber-950">Cable Lateral Raise</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-amber-950">4</td>
+                                    <td class="text-amber-950">12–20</td>
+                                    <td class="text-amber-950">60 sec</td>
+                                    <td><span class="text-amber-700 font-semibold">🔥 SHOULDER CAP BUILDER. Constant cable tension. Strict form, zero body bounce.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/face-pulls.webp" alt="Rear Delt Fly" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Delt+Fly'" />
+                                            <span class="font-semibold">Rear-Delt Fly (Machine or DB)</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>12–20</td>
+                                    <td>60 sec</td>
+                                    <td>Completes the rounded 3D shoulder look from the side profile.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/superset-arms.webp" alt="Incline DB Curl" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Incline+Curl'" />
+                                            <span class="font-semibold">Incline DB Curl</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>10–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Long-head bicep stretch. Sit back on bench; keep elbows behind the body.</td>
+                                </tr>
+                                <tr class="bg-emerald-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/overhead-triceps-ext.webp" alt="Overhead Triceps" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Overhead'" />
+                                            <span class="font-semibold text-emerald-950">Overhead Triceps Extension</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-emerald-950">2</td>
+                                    <td class="text-emerald-950">10–15</td>
+                                    <td class="text-emerald-950">60–90 sec</td>
+                                    <td><span class="text-emerald-700 font-semibold">Deep long-head triceps stretch under load for maximal arm thickness.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/tricep-rope-pushdown.webp" alt="Rope Pushdown" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Pushdown'" />
+                                            <span class="font-semibold">Rope Pushdown</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>12–15</td>
+                                    <td>60 sec</td>
+                                    <td>Finishing tricep flush. Squeeze hard and hold the bottom split for 1 second.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DAY 6: LOWER + CORE + ENDURANCE -->
+                <div class="card bg-white border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 flex justify-between items-center text-white">
+                        <div>
+                            <h3 class="font-bold text-base md:text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-person-running text-orange-400"></i> DAY 6: LOWER + CORE + ENDURANCE (Posterior Chain)
+                            </h3>
+                            <p class="text-xs text-slate-400">Posterior chain hinge, core stability, and 20–30 min aerobic engine building</p>
+                        </div>
+                        <div class="badge badge-primary font-bold text-xs">Posterior & Cardio</div>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-600">
+                                    <th>Exercise</th>
+                                    <th>Sets</th>
+                                    <th>Reps / Time</th>
+                                    <th>Rest</th>
+                                    <th>Form Focus & Coaching Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-blue-50/40">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/romanian-deadlift.webp" alt="Romanian Deadlift" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=RDL'" />
+                                            <span class="font-semibold text-blue-950">Romanian Deadlift (DB / Barbell)</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-blue-950">3</td>
+                                    <td class="text-blue-950">8–10</td>
+                                    <td class="text-blue-950">2–3 min</td>
+                                    <td><span class="text-blue-700 font-semibold">Hamstring & glute hinge mechanics. Push hips back; keep the bar scraping thighs.</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/front-squat.webp" alt="Hack Squat" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Hack+Squat'" />
+                                            <span class="font-semibold">Hack Squat / Leg Press</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>8–12</td>
+                                    <td>2 min</td>
+                                    <td>Quad stimulation with stabilized spine. Controlled 2s descent.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/bulgarian-split-squat.webp" alt="Walking Lunges" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Lunges'" />
+                                            <span class="font-semibold">Walking Lunges</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">2</td>
+                                    <td>10 / leg</td>
+                                    <td>90 sec</td>
+                                    <td>Functional leg strength and hip stability. Take steady, controlled strides.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/lying-leg-curl.webp" alt="Seated Leg Curl" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Seated+Curl'" />
+                                            <span class="font-semibold">Seated Leg Curl</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>10–15</td>
+                                    <td>60–90 sec</td>
+                                    <td>Hamstring builder in a hip-flexed position. Control the negative.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/seated-calf-raise.webp" alt="Seated Calf Raise" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Seated+Calf'" />
+                                            <span class="font-semibold">Seated Calf Raise</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">3</td>
+                                    <td>12–15</td>
+                                    <td>60 sec</td>
+                                    <td>Targets soleus muscle for lower-leg width. Hold bottom stretch for 1 second.</td>
+                                </tr>
+                                <tr class="bg-orange-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/hanging-leg-raise.webp" alt="Hanging Knee Raise" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Hanging+Knee'" />
+                                            <span class="font-semibold text-orange-950">Hanging Knee Raise</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-orange-950">3</td>
+                                    <td class="text-orange-950">10–15</td>
+                                    <td class="text-orange-950">45–60 sec</td>
+                                    <td>Curl knees up toward chest. Do not swing or use body sway momentum.</td>
+                                </tr>
+                                <tr class="bg-orange-50/50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/ab-wheel.webp" alt="Ab Wheel" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Ab+Wheel'" />
+                                            <span class="font-semibold text-orange-950">Ab Wheel Rollout*</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-orange-950">2</td>
+                                    <td class="text-orange-950">6–12</td>
+                                    <td class="text-orange-950">60 sec</td>
+                                    <td><span class="text-red-600 font-semibold">*Caution: Only perform if he can execute without losing lower back tension. Otherwise swap for Plank.</span></td>
+                                </tr>
+                                <tr class="bg-emerald-50">
+                                    <td>
+                                        <div class="flex items-center gap-3">
+                                            <img src="/images/exercises/incline-walk.webp" alt="Endurance Cardio" class="w-10 h-10 rounded-lg object-cover border border-slate-200" onerror="this.src='https://placehold.co/80x80?text=Cardio'" />
+                                            <span class="font-semibold text-emerald-950">🏃 Steady-State Endurance</span>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold text-emerald-950">1</td>
+                                    <td class="text-emerald-950">20–30 min</td>
+                                    <td class="text-emerald-950">Steady</td>
+                                    <td><span class="text-emerald-800 font-semibold">Incline walking, cycling, or elliptical. Moderate pace (breathing hard but able to speak in short sentences).</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- DAY 7: COMPLETE REST -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card bg-slate-100 border border-slate-200 border-dashed p-4 shadow-sm">
+                        <h3 class="font-bold text-slate-700 text-sm md:text-base flex items-center gap-2">
+                            <i class="fa-solid fa-bed text-slate-500"></i> DAY 7: COMPLETE REST & SLEEP
+                        </h3>
+                        <p class="text-xs text-slate-500 mt-1">Zero lifting. Refuel your glycogen reserves, drink plenty of water, and allow micro-tears in muscle tissue to rebuild stronger.</p>
+                    </div>
+                    <div class="card bg-slate-100 border border-slate-200 border-dashed p-4 shadow-sm">
+                        <h3 class="font-bold text-slate-700 text-sm md:text-base flex items-center gap-2">
+                            <i class="fa-solid fa-heart-pulse text-red-500"></i> RECOVERY ARCHITECTURE
+                        </h3>
+                        <p class="text-xs text-slate-500 mt-1">Aim for <strong>7–9 hours of sleep</strong> per night. Muscle protein synthesis and hormonal recovery peak entirely during deep sleep cycles.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 🧠 COACHING & WEIGHT SELECTION ALGORITHM -->
+        <section class="card bg-slate-900 text-white shadow-2xl overflow-hidden border-t-4 border-amber-500 p-6 md:p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
+                <div>
+                    <h3 class="text-xl md:text-2xl font-bold text-amber-400 uppercase italic">
+                        <i class="fa-solid fa-graduation-cap mr-2"></i> How to Coach His Starting Weights
+                    </h3>
+                    <p class="text-slate-400 text-xs md:text-sm mt-0.5">Never prescribe arbitrary loads like "squat 50kg." Let his capacity dictate the load.</p>
+                </div>
+                <div class="mt-2 md:mt-0 badge badge-outline text-slate-300 text-xs">Dynamic Load Calibration</div>
+            </div>
+
+            <!-- 3 Criteria Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs md:text-sm">
+                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="font-bold text-emerald-400 flex items-center gap-2 text-sm mb-1">
+                        <i class="fa-solid fa-circle-check"></i> Clean Reps & ~3 RIR (Correct)
+                    </span>
+                    <p class="text-slate-300">If prescribed <strong>3 × 8–12</strong> and he hits:</p>
+                    <div class="font-mono bg-slate-900 p-2 rounded text-emerald-300 my-2">Set 1: 10 | Set 2: 10 | Set 3: 9</div>
+                    <p class="text-slate-400 text-xs">Form was crisp and he had ~3 reps left. Keep this starting weight and apply double progression.</p>
+                </div>
+
+                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="font-bold text-red-400 flex items-center gap-2 text-sm mb-1">
+                        <i class="fa-solid fa-circle-xmark"></i> Too Heavy (Cut Load)
+                    </span>
+                    <p class="text-slate-300">If he attempts the weight and gets:</p>
+                    <div class="font-mono bg-slate-900 p-2 rounded text-red-300 my-2">Set 1: 5 | Set 2: 4 | Set 3: 4</div>
+                    <p class="text-slate-400 text-xs">Weight is too heavy for a beginner's connective tissues. Drop load by 15–20% immediately.</p>
+                </div>
+
+                <div class="p-4 bg-slate-800 rounded-xl border border-slate-700">
+                    <span class="font-bold text-amber-400 flex items-center gap-2 text-sm mb-1">
+                        <i class="fa-solid fa-circle-exclamation"></i> Too Light (Step Up)
+                    </span>
+                    <p class="text-slate-300">If he breezes through easily and gets:</p>
+                    <div class="font-mono bg-slate-900 p-2 rounded text-amber-300 my-2">Set 1: 12 | Set 2: 12 | Set 3: 12 (+8 easy)</div>
+                    <p class="text-slate-400 text-xs">Zero mechanical challenge. Safely increase dumbbell or machine pin load for next session.</p>
+                </div>
+            </div>
+
+            <!-- Double Progression Example -->
+            <div class="mt-6 pt-6 border-t border-slate-800">
+                <h4 class="font-bold text-white text-sm md:text-base mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-chart-line text-emerald-400"></i> The "Double Progression" Rule (E.g. Incline DB Press 3 × 8–12)
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-xs">
+                    <div class="bg-slate-800/80 p-3 rounded-lg">
+                        <span class="text-slate-400 font-bold block">1. First Baseline</span>
+                        <div class="text-white font-mono my-1">12.5–15 kg &times; 10, 9, 8</div>
+                        <span class="text-slate-400">Hits safe bottom range</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-3 rounded-lg">
+                        <span class="text-slate-400 font-bold block">2. Earn Reps</span>
+                        <div class="text-amber-300 font-mono my-1">15 kg &times; 10, 10, 9</div>
+                        <span class="text-slate-400">Same weight, add repetitions</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-3 rounded-lg">
+                        <span class="text-slate-400 font-bold block">3. Ceiling Reached</span>
+                        <div class="text-emerald-300 font-mono my-1">15 kg &times; 12, 12, 12</div>
+                        <span class="text-slate-400">Top of rep target earned</span>
+                    </div>
+                    <div class="bg-slate-800/80 p-3 rounded-lg border border-emerald-500/40">
+                        <span class="text-emerald-400 font-bold block">4. Level Up</span>
+                        <div class="text-white font-mono my-1">17.5 kg &times; 8–10</div>
+                        <span class="text-slate-400">Smallest jump; repeat cycle</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🏃 CARDIO & 73KG RECOMP MAINTENANCE NUTRITION PROTOCOL -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+            <!-- Endurance Progression -->
+            <div class="card bg-cyan-50 border border-cyan-100 p-6">
+                <h3 class="text-lg font-bold text-cyan-950 flex items-center gap-2 mb-2">
+                    <i class="fa-solid fa-heart-pulse text-cyan-600"></i> Aerobic & Endurance Progression
+                </h3>
+                <p class="text-xs text-cyan-800 mb-4">Avoid aggressive, exhausting cardio out of the gate. Build aerobic capacity gradually.</p>
+                
+                <div class="space-y-3 text-xs md:text-sm text-cyan-950">
+                    <div class="p-3 bg-white/80 rounded-lg border border-cyan-200">
+                        <strong>Weeks 1–2:</strong> 2 cardio sessions &times; <strong>15–20 minutes</strong> (low-to-moderate steady state) + regular daily steps.
+                    </div>
+                    <div class="p-3 bg-white/80 rounded-lg border border-cyan-200">
+                        <strong>Weeks 3–4:</strong> 2 cardio sessions &times; <strong>20–30 minutes</strong> (incline walking, stationary cycle, or elliptical).
+                    </div>
+                    <p class="text-xs text-cyan-700 italic">
+                        *Target intensity: Conversational pace. Breathing harder, but able to speak in short sentences without gasping.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Nutrition Protocol (Customized for 73kg / 5'8" Maintenance Recomp) -->
+            <div class="card bg-orange-50 border border-orange-100 p-6">
+                <div class="flex items-center justify-between mb-2">
+                    <h3 class="text-lg font-bold text-orange-950 flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced text-orange-600"></i> 73 kg Maintenance / Recomp Diet
+                    </h3>
+                    <span class="badge badge-warning text-xs font-bold">~2,450 kcal</span>
+                </div>
+                <p class="text-xs text-orange-800 mb-3">
+                    Calculated for 73 kg, 5'8", 5 training days + 8k daily steps. This holds body weight steady while fueling body recomposition (dropping visceral fat and packing on muscle).
+                </p>
+                
+                <div class="space-y-2 text-xs md:text-sm text-slate-700">
+                    <div class="flex items-center justify-between p-2 bg-white/80 rounded border border-orange-200">
+                        <span class="font-bold text-orange-900">Total Calories:</span>
+                        <span class="font-mono text-orange-700 font-bold">~2,400 – 2,500 kcal / day</span>
+                    </div>
+                    <div class="flex items-center justify-between p-2 bg-white/80 rounded border border-orange-200">
+                        <span class="font-bold text-orange-900">Protein Target (1.6–2.0g/kg):</span>
+                        <span class="font-mono text-orange-700 font-bold">120g – 150g / day</span>
+                    </div>
+                    <div class="flex items-center justify-between p-2 bg-white/80 rounded border border-orange-200">
+                        <span class="font-bold text-orange-900">Carbs & Fats:</span>
+                        <span class="text-orange-700 font-mono">~275g Carbs | ~65g Healthy Fats</span>
+                    </div>
+
+                    <!-- Daily Meal Breakdown -->
+                    <div class="bg-white/90 p-3 rounded-lg border border-orange-200 text-[11px] md:text-xs space-y-1.5 mt-2">
+                        <div><strong class="text-orange-900">Breakfast (~550 kcal):</strong> 3 whole eggs + 2 egg whites, 50g oats in water or milk, 1 banana.</div>
+                        <div><strong class="text-orange-900">Lunch (~700 kcal):</strong> 180g cooked rice (Miniket/Basmati), 160g chicken breast or Rui fish curry, dal + leafy greens.</div>
+                        <div><strong class="text-orange-900">Pre-Gym (~250 kcal):</strong> Black coffee, 1 apple or 2 digestive biscuits, handful of almonds/peanuts.</div>
+                        <div><strong class="text-orange-900">Dinner (~650 kcal):</strong> 150g cooked rice, 150g local fish (Katla/Tilapia) or beef (lean), mixed salad & lentils.</div>
+                        <div><strong class="text-orange-900">Before Bed (~300 kcal):</strong> 1 glass warm skimmed milk + handful roasted grams/peanuts.</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 🏆 POST-MONTH 1 GRADUATION CRITERIA -->
+        <div class="card bg-slate-900 text-slate-300 p-6 md:p-8 rounded-2xl border border-slate-800">
+            <h3 class="text-base md:text-lg font-bold text-white mb-2 uppercase tracking-widest text-center flex items-center justify-center gap-2">
+                <i class="fa-solid fa-trophy text-amber-400"></i> Month 1 Graduation Benchmark
+            </h3>
+            <p class="text-xs md:text-sm text-slate-400 text-center max-w-xl mx-auto mb-6">
+                Before adding excessive training volume or advanced intensification techniques, confirm he hits these 5 checkpoints:
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-3 text-center text-xs">
+                <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-check-double text-emerald-400 text-lg mb-1 block"></i>
+                    <div class="font-bold text-white">Technique First</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">Executes clean movement trajectories with zero joint pain.</div>
+                </div>
+                <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-battery-three-quarters text-emerald-400 text-lg mb-1 block"></i>
+                    <div class="font-bold text-white">Solid Recovery</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">No lingering systemic fatigue heading into next push/pull day.</div>
+                </div>
+                <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-calendar-check text-emerald-400 text-lg mb-1 block"></i>
+                    <div class="font-bold text-white">Consistency</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">Completed workouts on the 5 on / 2 off weekly cadence.</div>
+                </div>
+                <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-arrow-trend-up text-emerald-400 text-lg mb-1 block"></i>
+                    <div class="font-bold text-white">Progression</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">Safely logged repetitions and incremental weight jumps.</div>
+                </div>
+                <div class="p-3 bg-slate-800 rounded-xl border border-slate-700">
+                    <i class="fa-solid fa-shield-heart text-emerald-400 text-lg mb-1 block"></i>
+                    <div class="font-bold text-white">Zero Injury</div>
+                    <div class="text-[11px] text-slate-400 mt-0.5">Connective tissue, lower back, and elbows feeling durable.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
